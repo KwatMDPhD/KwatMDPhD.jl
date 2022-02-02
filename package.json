@@ -4,6 +4,7 @@
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
+    "deploy": "rm -rf build && npm run build && npx gh-pages --dist build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview"
   },
@@ -11,12 +12,8 @@
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/adapter-static": "^1.0.0-next.26",
     "@sveltejs/kit": "next",
-    "svelte": "^3.46.0"
+    "gh-pages": "^3.2.3",
+    "svelte": "^3.44.0"
   },
-  "type": "module",
-  "dependencies": {
-    "@fontsource/fira-mono": "^4.5.0",
-    "@lukeed/uuid": "^2.0.0",
-    "cookie": "^0.4.1"
-  }
+  "type": "module"
 }
