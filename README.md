@@ -40,6 +40,16 @@ Preview the built app
 npm run preview -- --open
 ```
 
+## 3
+
+Read https://kit.svelte.dev/docs#adapters-supported-environments-static-sites and follow
+
+```js
+// svelte.config.js
+-import adapter from '@sveltejs/adapter-auto';
++import adapter from 'svelte-adapter-[x]';
+```
+
 
 
 
@@ -53,6 +63,6 @@ npm run preview -- --open
 
 ## 10
 
-Do all https://svelte.dev/tutorial/basics
+Do all https://svelte.dev/tutorial/basics.
 
-Do all https://kit.svelte.dev/docs
+Do all https://kit.svelte.dev/docs.
