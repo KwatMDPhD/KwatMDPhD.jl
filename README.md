@@ -1,80 +1,40 @@
-Make the most minimal app (pick skeleton and say no to everything else)
+# create-svelte
 
-## 1
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+
+## Creating a project
+
+If you're seeing this, you've probably already done this step. Congrats!
 
 ```bash
+# create a new project in the current directory
 npm init svelte@next
+
+# create a new project in my-app
+npm init svelte@next my-app
 ```
 
-Install dependencies
+> Note: the `@next` is temporary
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
-npm install
-```
+npm run dev
 
-Run the app
-
-```bash
+# or start the server and open the app in a new browser tab
 npm run dev -- --open
 ```
 
-## 2
+## Building
 
-Build the app
-
-```bash
-ls -l .svelt-kit
-```
+To create a production version of your app:
 
 ```bash
 npm run build
 ```
 
-```bash
-ls -l .svelt-kit
-```
+You can preview the production build with `npm run preview`.
 
-Preview the built app
-
-```bash
-npm run preview -- --open
-```
-
-## 3
-
-Read https://kit.svelte.dev/docs#adapters-supported-environments-static-sites and follow:
-
-Install `adapter-static` (for only during development)
-
-```bash
-npm install --save-dev @sveltejs/adapter-static@next 
-```
-
-Edit `svelte.config.js`
-
-```diff
--import adapter from '@sveltejs/adapter-auto';
-+import adapter from '@sveltejs/adapter-static';
-```
-
-Build
-
-```bash
-npm run build
-```
-
-
-
-
-
-
-
-
-
-
-
-## 10
-
-Do all https://svelte.dev/tutorial/basics.
-
-Do all https://kit.svelte.dev/docs.
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment.
