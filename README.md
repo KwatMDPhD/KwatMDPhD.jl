@@ -46,7 +46,7 @@ Read https://kit.svelte.dev/docs#adapters-supported-environments-static-sites an
 
 ```diff
 -import adapter from '@sveltejs/adapter-auto';
-+import adapter from 'svelte-adapter-[x]';
++import adapter from '@sveltejs/adapter-static';
 ```
 
 
