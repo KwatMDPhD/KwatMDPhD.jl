@@ -42,10 +42,9 @@ npm run preview -- --open
 
 ## 3
 
-Read https://kit.svelte.dev/docs#adapters-supported-environments-static-sites and follow
+Read https://kit.svelte.dev/docs#adapters-supported-environments-static-sites and edit `svelte.config.js`
 
-```js
-// svelte.config.js
+```diff
 -import adapter from '@sveltejs/adapter-auto';
 +import adapter from 'svelte-adapter-[x]';
 ```
