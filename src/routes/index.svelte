@@ -12,6 +12,8 @@
 
 <p>I was told to get into <a href="https://www.tiktok.com/@KwatMDPhD">TikTok</a>.</p>
 
+<p>I do meetings on <a href="https://stanford.zoom.us/my/KwatMDPhD">Zoom</a> (ask for the passcode).</p>
+
 <p>When I complete the things I'm building, I'll share them with you on these channels ;)</p>
 
 <h3>Every adversity, carries with it, the seed of equivalent advantage.</h3>
