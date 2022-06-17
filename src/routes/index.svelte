@@ -24,5 +24,4 @@
 
 <p><a href="https://discord.gg/tKh7fguMrD">Bioinformatics community</a>.</p>
 
-<p><a href="https://www.amazon.com/s?i=stripbooks&rh=p_27%3AKwat+Medetgul-Ernar&s=relevancerank&text=Kwat+Medetgul-Ernar&ref=dp_byline_sr_book_2">Pathogen books for children</a>.</p>
-
+<p><a href="https://www.amazon.com/s?i=stripbooks&rh=p_27%3AKwat+Medetgul-Ernar&s=relevancerank&text=Kwat+Medetgul-Ernar&ref=dp_byline_sr_book_2">Children's book about pathogens</a>.</p>
