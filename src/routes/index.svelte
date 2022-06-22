@@ -4,19 +4,19 @@
 
 <h4>I ...</h4>
 
-<p>keep some code @ <a href="https://github.com/KwatMDPhD">GitHub</a>.</p>
+<p><a href="https://github.com/KwatMDPhD">code</a>.</p>
 
-<p>list my publications @ <a href="https://scholar.google.com/citations?user=PAM4lScAAAAJ&hl=en">Google Scholar</a>.</p>
+<p><a href="https://scholar.google.com/citations?user=PAM4lScAAAAJ&hl=en">publish</a>.</p>
 
-<p>record medical podcasts (daily) @ <a href="https://kwatmdphd.sounder.fm">Sounder</a>.</p>
+<p><a href="https://podcast.kwatmdphd.com">podcast</a> (daily).</p>
 
-<p>make medical videos (occasionally) @ <a href="https://www.youtube.com/c/KwatMDPhD">YouTube</a>.</p>
+<p><a href="https://www.youtube.com/c/KwatMDPhD">record</a> (ocasionally).</p>
 
-<p>share moments @ <a href="https://www.instagram.com/KwatMDPhD">Instagram</a>.</p>
+<p>share <a href="https://www.instagram.com/KwatMDPhD">moments</a> (sometimes).</p>
 
-<p>share thoughts @ <a href="https://twitter.com/KwatMDPhD">Twitter</a>.</p>
+<p>share <a href="https://twitter.com/KwatMDPhD">thoughts</a> (sometimes).</p>
 
-<p>meet @ (ask for the passcode) <a href="https://stanford.zoom.us/my/KwatMDPhD">Zoom</a>.</p>
+<p><a href="https://stanford.zoom.us/my/KwatMDPhD">meet</a> (ask for the passcode).</p>
 
 <h3>Every adversity, carries with it, the seed of equivalent advantage.</h3>
 
