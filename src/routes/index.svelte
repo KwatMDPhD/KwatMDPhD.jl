@@ -1,8 +1,8 @@
 <h1>Hi, I'm Kwat :)</h1>
 
-<h5>Nomad from Kazakhstan → China → Japan → FIBA U16 Olympian → USA → Leukemia → Homeless → Startup → Stanford MD-PhD candidate → More startups →</h5>
+<h4>Nomad from Kazakhstan → China → Japan → FIBA U16 Olympian → USA → Leukemia → Homeless → Startup → Stanford MD-PhD candidate → More startups →</h4>
 
-<h4>I ...</h4>
+<h5>These days, I ...</h5>
 
 <p><a href="https://github.com/KwatMDPhD">code</a>.</p>
 
