@@ -2,10 +2,9 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="description" content="" />
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		
+
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-8RQLPYYMCH"></script>
 		<script>
@@ -17,10 +16,10 @@
 		</script>
 
 		<meta http-equiv="content-security-policy" content="">
-	<link rel="modulepreload" href="/_app/start-b2e8268f.js">
-	<link rel="modulepreload" href="/_app/chunks/vendor-f0095a1c.js">
-	<link rel="modulepreload" href="/_app/layout.svelte-a6119758.js">
-	<link rel="modulepreload" href="/_app/pages/index.svelte-a9dd31a4.js">
+	<link rel="modulepreload" href="/_app/immutable/start-8e79b140.js">
+	<link rel="modulepreload" href="/_app/immutable/chunks/index-03969575.js">
+	<link rel="modulepreload" href="/_app/immutable/layout.svelte-975ed711.js">
+	<link rel="modulepreload" href="/_app/immutable/pages/index.svelte-6936ea0b.js">
 	</head>
 	<body>
 		<div>
@@ -55,10 +54,10 @@
 <p><a href="https://www.amazon.com/s?i=stripbooks&rh=p_27%3AKwat+Medetgul-Ernar&s=relevancerank&text=Kwat+Medetgul-Ernar&ref=dp_byline_sr_book_2">Children&#39;s book about pathogens</a>.</p>
 
 
-		<script type="module" data-hydrate="aka9oc">
-		import { start } from "/_app/start-b2e8268f.js";
+		<script type="module" data-sveltekit-hydrate="aka9oc">
+		import { start } from "/_app/immutable/start-8e79b140.js";
 		start({
-			target: document.querySelector('[data-hydrate="aka9oc"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="aka9oc"]').parentNode,
 			paths: {"base":"","assets":""},
 			session: {},
 			route: true,
@@ -67,12 +66,9 @@
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [
-					import("/_app/layout.svelte-a6119758.js"),
-						import("/_app/pages/index.svelte-a9dd31a4.js")
-				],
-				url: new URL("http://sveltekit-prerender/"),
-				params: {}
+				nodes: [0, 2],
+				params: {},
+				routeId: ""
 			}
 		});
 	</script></div>
