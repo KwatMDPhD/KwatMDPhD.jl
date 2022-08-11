@@ -32,7 +32,7 @@
 
 <h1>Hi, I'm Kwat :)</h1>
 
-<h4>Nomad from Kazakhstan → China → Japan → FIBA U16 Olympian → USA → Leukemia → Homeless → Programmer → Startup → Stanford MD-PhD candidate → Entrepreneur </h4>
+<h4>Nomad from Kazakhstan → China → Japan → FIBA U16 Olympian → USA → Leukemia → Homeless → Programmer → Guardiome founder → Stanford MD-PhD candidate → Entrepreneur </h4>
 
 <h5>These days, I ...</h5>
 
