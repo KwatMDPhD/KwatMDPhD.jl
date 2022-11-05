@@ -5,7 +5,7 @@
         ["https://scholar.google.com/citations?user=PAM4lScAAAAJ&hl=en", "publish", ""],
         ["https://discord.gg/tKh7fguMrD", "collaborate", "join the bioinformatics community"],
         ["https://podcast.kwatmdphd.com", "podcast",""],
-        ["https://www.youtube.com/c/KwatMDPhD","record", ""],
+        ["https://www.youtube.com/c/Kwat","record", ""],
         ["https://www.instagram.com/KwatMDPhD", "share moments", ""],
         ["https://twitter.com/KwatMDPhD","share thoughts",  ""],
         ["https://stanford.zoom.us/my/KwatMDPhD","meet",  "ask for the passcode"],
@@ -32,7 +32,7 @@
 
 <h1>Hi, I'm Kwat :)</h1>
 
-<h4>Nomad from Kazakhstan → China → Japan → FIBA U16 Olympian → USA → Leukemia → Homeless → Programmer → Guardiome founder → Stanford MD-PhD candidate → (Entrepreneur) </h4>
+<h4>Nomad from Kazakhstan → China → Japan → FIBA U16 Olympian → USA → Leukemia → Homeless → Programmer → iGEM Gold medalist → Guardiome founder → Stanford MD-PhD candidate → Tiny Beasts founder → Mt Jiu Jitsu founder → </h4>
 
 <h5>These days, I ...</h5>
 
