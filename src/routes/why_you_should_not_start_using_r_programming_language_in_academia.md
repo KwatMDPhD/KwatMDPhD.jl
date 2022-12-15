@@ -1,0 +1,9 @@
+Are you a graduate student? Post-doc? Or whoever starting to pick up a programming language to analyze your data?
+
+If you pick a wrong language, you will have less options in the future, stuck in academia, and be miserable. I know many colleagues in this position.
+
+But if you watch my video and pick the right one, then companies from biotech to finance will want you, you will have many options, and you can even start a successful tech company.
+
+The back-end languages you should work with are Julia, Rust, and maybe Python and the front-end ones are Java Script and Type Script with Svelte. The languages you must avoid is R and (maybe Python).
+
+I'll make a longer video detailing my reasoning including my experience and results if I reach 500 subscribers. So if you want to know more, hit the subscription button. See you in my channel.
