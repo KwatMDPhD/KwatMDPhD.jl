@@ -7,9 +7,9 @@
         ["https://guardiome.com", "sequence DNA"],
         ["https://immunogram.io", "measure the immune system"],
         ["https://www.amazon.com/s?i=stripbooks&rh=p_27%3AKwat+Medetgul-Ernar&s=relevancerank&text=Kwat+Medetgul-Ernar&ref=dp_byline_sr_book_2", "write books"],
-        ["https://www.mountjiujitsu.com", "teach jiu-jitsu"],
-        ["https://www.youtube.com/c/KwatMDPhD", "record"],
-        ["https://www.instagram.com/KwatMDPhD", "share moments"],
+        ["https://mtjiujitsu.com", "teach jiu-jitsu"],
+        ["https://youtube.com/c/KwatMDPhD", "record video"],
+        ["https://instagram.com/KwatMDPhD", "share moments"],
         ["https://twitter.com/KwatMDPhD", "share thoughts"],
         ["https://stanford.zoom.us/my/KwatMDPhD", "meet"],
     ]
