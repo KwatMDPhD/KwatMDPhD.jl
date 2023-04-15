@@ -13,13 +13,40 @@ MD-PhD candidate at Stanford 🩺🌲
 Hacking immunology at Mark Davis Lab 🥼🦠
 Maker of Guardiome, GSEA, Tiny Beasts, and Immunogram 💻📦
 
+## YouTube
+
+### Description
+
+Learning medicine should be more fun.
+Join Kwat Medetgul-Ernar (MD-PhD student at Stanford) to learn bits of medicine simply and with comedy :)
+If you are pursuing MD, PA, RN, PhD, or just interested in medicine, this show is for you!
+
+### Tag
+
+Medicine
+Bioinformatics
+Health
+Genomics
+Immunology
+Microbiology
+DNA
+RNA
+Protein
+Cell
+Pathogen
+MD
+PhD
+USMLE
+STEP1
+STEP2
+
 ## Podcast
 
 ### Description
 
 Learning medicine should be more fun.
 Join Kwat Medetgul-Ernar (MD-PhD student at Stanford) to learn bits of medicine simply and with comedy :)
-If you are pursuing MD, PA, RN, PhD, or are just interested in medicine, this show is for you!
+If you are pursuing MD, PA, RN, PhD, or just interested in medicine, this show is for you!
 
 ### Episode
 
