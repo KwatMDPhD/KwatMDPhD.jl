@@ -25,9 +25,9 @@ Medicine,Health,Disease,Physiology,Microbiology,Immunology,Biology,Bioinformatic
 
 #### Channel Description
 
-Learning medicine should be more fun.
-Join Kwat Medetgul-Ernar (MD-PhD candidate at Stanford) to learn bits of medicine simply and with comedy!
-If you are pursuing healthcare or are just interested in medicine, this channel is for you!
+The intersection between medicine and science (especially immunology!) is fascinating.
+In this show, Kwat Medetgul-Ernar (an MD-PhD candidate at Stanford) explains biomedical science with a splash of humor.
+If you want to increase your biomedical knowledge, this show is for you.
 
 #### Video Description
 
@@ -41,9 +41,9 @@ Connect with me at https://KwatMDPhD.com 📍
 
 #### Podcast Description
 
-Learning medicine should be more fun.
-Join Kwat Medetgul-Ernar (MD-PhD candidate at Stanford) to learn bits of medicine simply and with comedy!
-If you are pursuing healthcare or are just interested in medicine, this show is for you!
+The intersection between medicine and science (especially immunology!) is fascinating.
+In this show, Kwat Medetgul-Ernar (an MD-PhD candidate at Stanford) explains biomedical science with a splash of humor.
+If you want to increase your biomedical knowledge, this show is for you.
 
 #### Episode Description
 
