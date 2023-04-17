@@ -3,16 +3,16 @@
     let li_ = [
         ["https://scholar.google.com/citations?user=PAM4lScAAAAJ&hl=en", "Google Scholar"],
         ["https://github.com/KwatMDPhD", "GitHub"],
-        ["https://youtube.com/c/KwatMDPhD?sub_confirmation=1", "YouTube"],
-        ["https://", "Podcast"],
+        ["https://youtube.com/@KwatMDPhD?sub_confirmation=1", "YouTube"],
+        ["https://podcast.KwatMDPhD.com", "Podcast"],
         ["https://twitter.com/KwatMDPhD", "Twitter"],
         ["https://instagram.com/KwatMDPhD", "Instagram"],
         ["https://guardiome.com", "Guardiome"],
-        ["https://www.amazon.com/s?i=stripbooks&rh=p_27%3AKwat+Medetgul-Ernar&s=relevancerank&text=Kwat+Medetgul-Ernar&ref=dp_byline_sr_book_2", "Tiny Beasts"],
-        ["https://mountjiujitsu.com", "Mount Jiu-Jitsu"],
+        ["https://amazon.com/s?i=stripbooks&rh=p_27%3AKwat+Medetgul-Ernar&s=relevancerank&text=Kwat+Medetgul-Ernar&ref=dp_byline_sr_book_2", "Tiny Beasts"],
         ["https://immunogram.io", "Immunogram"],
         ["https://discord.gg/tKh7fguMrD", "Bioinformatics"],
         ["https://stanford.zoom.us/my/KwatMDPhD", "Zoom"],
+        ["http://mountjiujitsu.com", "Mount Jiu-Jitsu"],
     ]
 
 </script>
