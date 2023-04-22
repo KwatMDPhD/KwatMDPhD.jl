@@ -1,0 +1,36 @@
+// TODO: Be less redundant with styling.
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spectral", serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #27221f;
+  // TODO: Remove.
+  background: #aaaaaa;
+}
+
+// TODO: Move to a more specific place.
+:where(h2, h3, h4, h5, h6) {
+  .icon-link {
+    position: relative;
+    &::before {
+      content: "#";
+      position: absolute;
+      top: 0;
+      left: -1ch;
+      line-height: 1;
+      text-decoration: underline;
+      opacity: 0;
+    }
+  }
+  &:hover .icon-link::before {
+    opacity: 1;
+  }
+}
