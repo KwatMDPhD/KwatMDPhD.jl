@@ -12,7 +12,7 @@
 
 <article>
   <h1 class="ti">{title}</h1>
-  <h4 class="da">🗓️ {date}</h4>
+  🗓️ {date}
   <img class="co" src="/image/{cover}" alt={cover} />
   <Content />
 </article>
@@ -30,12 +30,8 @@
     margin-bottom: 2rem;
   }
 
-  .da {
-    margin-bottom: 1rem;
-  }
-
   .co {
-    margin-bottom: 1rem;
+    margin: 1rem 0;
     object-fit: cover;
     height: 400px;
     width: 100%;
