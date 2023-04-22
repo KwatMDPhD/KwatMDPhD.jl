@@ -11,7 +11,7 @@
 <ul>
   {#each data.wr_ as wr}
     <li>
-      <h2><a href=./{wr.pa}>{wr.me.title}</a></h2>
+      <h2><a href={wr.pa}>{wr.me.title}</a></h2>
       🗓️ {wr.me.date}
     </li>
   {/each}

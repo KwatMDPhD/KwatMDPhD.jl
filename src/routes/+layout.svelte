@@ -41,6 +41,6 @@
     margin: 4rem auto;
     max-width: 64rem;
     padding: 1rem;
-    background: #bbbbbb;
+    /* background: #bbbbbb; */
   }
 </style>
