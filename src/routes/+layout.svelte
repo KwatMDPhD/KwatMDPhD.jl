@@ -13,6 +13,7 @@
 <svelte:head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script
     async
     src="https://googletagmanager.com/gtag/js?id=G-8RQLPYYMCH"
@@ -41,7 +42,6 @@
     max-width: 64rem;
     margin: 4rem auto;
     padding: 1rem;
-    /* TODO: Remove. */
-    background: #bbbbbb;
+    /* background: #bbbbbb; */
   }
 </style>
