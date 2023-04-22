@@ -6,13 +6,26 @@
   <title>Writing</title>
 </svelte:head>
 
-<h1>Opinions Are My Own.</h1>
+<h1 class="ti">Opinions Are My Own.</h1>
 <ul>
   {#each data.posts as post}
     <li>
       <h2><a href={post.path}>{post.meta.title}</a></h2>
-
-      Published {post.meta.date}
+      🗓️ {post.meta.date}
     </li>
   {/each}
 </ul>
+
+<style>
+  .ti {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  a {
+    color: inherit;
+  }
+</style>

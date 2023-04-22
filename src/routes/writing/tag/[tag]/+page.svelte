@@ -1,7 +1,7 @@
 <script>
   export let data;
 
-  const { date, title, banner, tag, Content } = data;
+  const { tag } = data;
 </script>
 
 <svelte:head>
