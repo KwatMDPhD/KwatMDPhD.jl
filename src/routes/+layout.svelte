@@ -1,6 +1,8 @@
 <script>
   import "$lib/style.scss";
 
+  import "@fontsource/spectral";
+
   import Header from "$lib/Header.svelte";
 
   import { fade } from "svelte/transition";
@@ -11,12 +13,6 @@
 </script>
 
 <svelte:head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script
     async
     src="https://googletagmanager.com/gtag/js?id=G-8RQLPYYMCH"
@@ -42,9 +38,9 @@
 
 <style>
   main {
-    max-width: 64rem;
     margin: 4rem auto;
+    max-width: 64rem;
     padding: 1rem;
-    /* background: #bbbbbb; */
+    background: #bbbbbb;
   }
 </style>

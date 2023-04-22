@@ -92,6 +92,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-wrap: wrap;
     background: #20d9ba;
     text-align: center;
     color: #ffffff;
@@ -100,6 +101,7 @@
   .fo1 {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding-top: 4rem;
   }
 
@@ -133,7 +135,7 @@
   }
 
   button {
-    margin-top: 1rem;
+    margin-top: 2rem;
     border: 0.24rem solid #ffffff;
     border-radius: 1rem;
     padding: 0.64rem 2rem;

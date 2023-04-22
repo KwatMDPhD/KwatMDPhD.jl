@@ -1,5 +1,6 @@
 <script>
   export let data;
+  console.log(data);
 </script>
 
 <svelte:head>
@@ -8,10 +9,10 @@
 
 <h1 class="ti">Opinions Are My Own.</h1>
 <ul>
-  {#each data.posts as post}
+  {#each data.wr_ as wr}
     <li>
-      <h2><a href={post.path}>{post.meta.title}</a></h2>
-      🗓️ {post.meta.date}
+      <h2><a href=./{wr.pa}>{wr.me.title}</a></h2>
+      🗓️ {wr.me.date}
     </li>
   {/each}
 </ul>

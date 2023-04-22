@@ -12,7 +12,7 @@
   <p>⬇</p>
   <h4>Japan 🇯🇵</h4>
   <p>⬇</p>
-  <h4>FIBA U16 Olympian 🔥</h4>
+  <h4>FIBA U16 Olympian 🌏</h4>
   <p>⬇</p>
   <h4>USA 🇺🇸</h4>
   <p>⬇</p>
@@ -43,12 +43,13 @@
   > 🦠
 </h4>
 <h4><a href="https://mountjiujitsu.com">Mount Jiu-Jitsu</a> 🏔️🥋🤼‍♂️</h4>
-<h4><a href="#">Chopper Health (stealth)</a> 👨‍⚕️</h4>
+<h4><a href="https://guardiome.com">Chopper Health (stealth)</a> 👨‍⚕️</h4>
 
 <style>
   h2 {
     margin-bottom: 1rem;
   }
+
   .jo {
     text-align: center;
     line-height: 2rem;

@@ -15,7 +15,6 @@ body {
   // background: #aaaaaa;
 }
 
-// TODO: Move to a more specific place.
 :where(h2, h3, h4, h5, h6) {
   .icon-link {
     position: relative;
@@ -29,6 +28,7 @@ body {
       opacity: 0;
     }
   }
+
   &:hover .icon-link::before {
     opacity: 1;
   }
