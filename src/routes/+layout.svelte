@@ -40,6 +40,7 @@
   main {
     margin: 4rem auto;
     max-width: 64rem;
+    width: 100%;
     padding: 1rem;
     /* background: #bbbbbb; */
   }

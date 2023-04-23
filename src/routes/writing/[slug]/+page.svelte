@@ -1,18 +1,19 @@
 <script>
   export let data;
 
-  const { date, title, cover, tag, Content } = data;
+  const { date, edit, title, cover, tag, Content } = data;
 </script>
 
 <svelte:head>
-  <title>Writing - {title}</title>
+  <title>Writing / {title}</title>
 
   <meta property="og:title" content={title} />
 </svelte:head>
 
 <article>
   <h1>{title}</h1>
-  🗓️ {date}
+  <p>🗓️ {date}</p>
+  <p>✍️ {edit}</p>
   <img class="co" src="/image/{cover}" alt={cover} />
   <Content />
 </article>
@@ -27,7 +28,7 @@
 
 <style>
   article {
-    margin-bottom: 2rem;
+    /* background: #dddddd; */
   }
 
   .co {
@@ -35,6 +36,10 @@
     object-fit: cover;
     height: 400px;
     width: 100%;
+  }
+
+  aside {
+    margin-top: 2rem;
   }
 
   ul {

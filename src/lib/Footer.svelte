@@ -88,21 +88,20 @@
 <style>
   footer {
     margin-top: auto;
-    height: 32rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
     background: #20d9ba;
     text-align: center;
     color: #ffffff;
   }
 
   .fo1 {
+    padding-top: 4rem;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding-top: 4rem;
+    gap: 4rem;
   }
 
   h4 {

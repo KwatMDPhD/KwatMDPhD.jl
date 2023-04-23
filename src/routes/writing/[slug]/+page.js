@@ -1,13 +1,13 @@
 export async function load({ params }) {
   const wr = await import(`../${params.slug}.md`);
-  console.log(wr);
 
-  const { date, title, cover, tag } = wr.metadata;
+  const { date, edit, title, cover, tag } = wr.metadata;
 
   const Content = wr.default;
 
   return {
     date,
+    edit,
     title,
     cover,
     tag,
