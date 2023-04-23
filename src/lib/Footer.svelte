@@ -91,6 +91,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 4rem;
     background: #20d9ba;
     text-align: center;
     color: #ffffff;
@@ -101,7 +102,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 4rem;
+    gap: inherit;
   }
 
   h4 {

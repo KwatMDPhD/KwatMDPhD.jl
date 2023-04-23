@@ -6,8 +6,6 @@
 
 <svelte:head>
   <title>Writing / {title}</title>
-
-  <meta property="og:title" content={title} />
 </svelte:head>
 
 <article>
