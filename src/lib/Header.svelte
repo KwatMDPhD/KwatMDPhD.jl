@@ -8,12 +8,12 @@
   </nav>
 </header>
 
-<style>
+<style lang="scss">
   header {
     padding: 1rem;
     display: flex;
     justify-content: space-between;
-    background: #20d9ba;
+    background: $co1;
     color: #ffffff;
   }
 

@@ -14,6 +14,31 @@
     faInstagram,
     faDiscord,
   } from "@fortawesome/free-brands-svg-icons";
+
+  const ch_ = [
+    ["https://gsea-msigdb.org/gsea/index.jsp", "Gene-Set Enrichment Analysis"],
+    ["https://guardiome.com", "Guardiome"],
+    ["https://immunogram.io", "Immunogram"],
+    [
+      "https://amazon.com/s?i=stripbooks&rh=p_27%3AKwat+Medetgul-Ernar&s=relevancerank&text=Kwat+Medetgul-Ernar&ref=dp_byline_sr_book_2",
+      "Tiny Beasts",
+    ],
+    ["https://mountjiujitsu.com", "Mount Jiu-Jitsu"],
+  ];
+
+  const co_ = [
+    ["https://github.com/KwatMDPhD", faGithub],
+    [
+      "https://scholar.google.com/citations?user=PAM4lScAAAAJ&hl=en",
+      faNewspaper,
+    ],
+    ["https://podcast.KwatMDPhD.com", faMicrophone],
+    ["https://youtube.com/@KwatMDPhD?sub_confirmation=1", faYoutube],
+    ["https://twitter.com/KwatMDPhD", faTwitter],
+    ["https://instagram.com/KwatMDPhD", faInstagram],
+    ["https://discord.gg/tKh7fguMrD", faDiscord],
+    ["https://stanford.zoom.us/my/KwatMDPhD", faPhone],
+  ];
 </script>
 
 <footer>
@@ -21,20 +46,11 @@
     <div>
       <h4>Check Out</h4>
       <ul>
-        <li>
-          <a href="https://gsea-msigdb.org/gsea/index.jsp"
-            >Gene-Set Enrichment Analysis</a
-          >
-        </li>
-        <li><a href="https://guardiome.com">Guardiome</a></li>
-        <li><a href="https://immunogram.io">Immunogram</a></li>
-        <li>
-          <a
-            href="https://amazon.com/s?i=stripbooks&rh=p_27%3AKwat+Medetgul-Ernar&s=relevancerank&text=Kwat+Medetgul-Ernar&ref=dp_byline_sr_book_2"
-            >Tiny Beasts</a
-          >
-        </li>
-        <li><a href="http://mountjiujitsu.com">Mount Jiu-Jitsu</a></li>
+        {#each ch_ as ch}
+          <li>
+            <a href={ch[0]}>{ch[1]}</a>
+          </li>
+        {/each}
       </ul>
     </div>
     <div>
@@ -42,110 +58,69 @@
       <form>
         <input type="email" required placeholder="Your Email Address" />
         <br />
-        <button type="submit">Subscribe Now</button>
+        <button type="submit">Coming Soon...</button>
       </form>
     </div>
     <div>
       <h4>Connect With Me</h4>
       <ul>
-        <li>
-          <a href="https://github.com/KwatMDPhD"><Fa icon={faGithub} /></a>
-        </li>
-        <li>
-          <a href="https://scholar.google.com/citations?user=PAM4lScAAAAJ&hl=en"
-            ><Fa icon={faNewspaper} /></a
-          >
-        </li>
-        <li>
-          <a href="https://podcast.KwatMDPhD.com"><Fa icon={faMicrophone} /></a>
-        </li>
-        <li>
-          <a href="https://youtube.com/@KwatMDPhD?sub_confirmation=1"
-            ><Fa icon={faYoutube} /></a
-          >
-        </li>
-        <li>
-          <a href="https://twitter.com/KwatMDPhD"><Fa icon={faTwitter} /></a>
-        </li>
-        <li>
-          <a href="https://instagram.com/KwatMDPhD"><Fa icon={faInstagram} /></a
-          >
-        </li>
-        <li>
-          <a href="https://discord.gg/tKh7fguMrD"><Fa icon={faDiscord} /></a>
-        </li>
-        <li>
-          <a href="https://stanford.zoom.us/my/KwatMDPhD"
-            ><Fa icon={faPhone} /></a
-          >
-        </li>
+        {#each co_ as co}
+          <li><a href={co[0]}><Fa icon={co[1]} /></a></li>
+        {/each}
       </ul>
     </div>
   </div>
   <h4 class="fo2">© 2023 Kwat Medetgul-Ernar, All Rights Reserved.</h4>
 </footer>
 
-<style>
+<style lang=scss>
+  $sp1: 1rem;
+
+  $sp2: 2rem;
+
+  $sp3: 4rem;
+
   footer {
     margin-top: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 4rem;
-    background: #20d9ba;
+    background: $co1;
     text-align: center;
     color: #ffffff;
   }
 
-  .fo1 {
-    padding-top: 4rem;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: inherit;
-  }
-
   h4 {
+    margin-top: $sp3;
+    margin-bottom: $sp2;
     letter-spacing: 0.1rem;
     font-weight: 200;
   }
 
-  .fo1 h4 {
-    margin-bottom: 2.4rem;
+  .fo1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 
   ul {
     display: flex;
+    gap: $sp1;
     flex-direction: column;
-    gap: 1rem;
     list-style: none;
-  }
-
-  a {
-    text-decoration: none;
-    color: inherit;
   }
 
   input {
     border: none;
-    border-radius: 0.24rem;
-    padding: 1rem 2.4rem;
-    text-align: inherit;
-    font-size: 1.16rem;
+    border-radius: 0.2rem;
+    padding: $sp1 $sp2;
+    font-size: 1.2rem;
   }
 
   button {
-    margin-top: 2rem;
-    border: 0.24rem solid #ffffff;
-    border-radius: 1rem;
-    padding: 0.64rem 2rem;
+    margin-top: $sp1;
+    border: 0.2rem solid #ffffff;
+    border-radius: 2rem;
+    padding: $sp1 $sp2;
     background: transparent;
-    font-size: 1.16rem;
+    font-size: inherit;
     color: inherit;
-    cursor: pointer;
-  }
-
-  .fo2 {
-    padding-bottom: 1rem;
   }
 </style>

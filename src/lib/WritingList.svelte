@@ -1,9 +1,5 @@
 <script>
-  // TODO: Try `let ti, wr_`.
-
-  export let ti;
-
-  export let wr_;
+  export let ti, wr_;
 </script>
 
 <h1 class="ti">{ti}</h1>

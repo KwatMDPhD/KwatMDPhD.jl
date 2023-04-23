@@ -17,6 +17,9 @@ const config = {
   extensions: [".svelte", ".md"],
   preprocess: [
     sveltePreprocess({
+      scss: {
+        prependData: `@import "src/lib/style.scss";`,
+      },
       postcss: {
         plugins: [autoprefixer],
       },
