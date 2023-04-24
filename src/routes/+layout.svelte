@@ -1,15 +1,13 @@
 <script>
-  import "@fontsource/spectral";
-
-  import "$lib/style.scss";
-
   import Header from "$lib/Header.svelte";
+
+  export let data;
 
   import { fade } from "svelte/transition";
 
   import Footer from "$lib/Footer.svelte";
 
-  export let data;
+  import "$lib/style.scss";
 </script>
 
 <svelte:head>
@@ -23,13 +21,12 @@
       dataLayer.push(arguments);
     }
     gtag("js", new Date());
-
     gtag("config", "G-8RQLPYYMCH");
   </script>
 </svelte:head>
 <Header />
 {#key data.pa}
-  <main in:fade={{ duration: 160, delay: 160 }} out:fade={{ duration: 160 }}>
+  <main in:fade={{ duration: 100, delay: 100 }} out:fade={{ duration: 100 }}>
     <slot />
   </main>
 {/key}
@@ -37,10 +34,13 @@
 
 <style lang="scss">
   main {
-    margin: auto;
+    margin-top: $sp3;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 64rem;
     width: 100%;
     padding: $sp1;
-    /* background: #bbbbbb; */
+    background: #bbbbbb;
   }
 </style>

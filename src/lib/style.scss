@@ -1,3 +1,5 @@
+@import "@fontsource/spectral";
+
 @import "variable.scss";
 
 * {
@@ -11,11 +13,11 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: $sp3;
-  // background: #aaaaaa;
+  background: #aaaaaa;
   color: #27221f;
 }
 
+// TODO: Understand.
 :where(h2, h3, h4, h5, h6) {
   .icon-link {
     position: relative;
@@ -30,6 +32,7 @@ body {
   }
 }
 
+// TODO: Style links.
 a {
   text-decoration: none;
   color: inherit;
