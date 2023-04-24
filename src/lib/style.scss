@@ -22,9 +22,13 @@ body {
 :where(h2, h3, h4, h5, h6) {
   .icon-link {
     position: relative;
+
     &::before {
-      content: "#";
+      position: absolute;
+      left: -1ch;
       opacity: 0;
+      content: "#";
+      text-decoration: underline;
     }
   }
 

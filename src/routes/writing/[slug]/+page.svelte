@@ -13,7 +13,7 @@
     <p>🗓️ {date}</p>
     <p>✍️ {edit}</p>
   </div>
-  <img class="co" src="/image/{cover}" alt={cover} />
+  <img class="co" src="/image/{cover}" alt="{cover}." />
   <Content />
 </article>
 <aside>

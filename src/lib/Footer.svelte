@@ -16,14 +16,14 @@
   } from "@fortawesome/free-brands-svg-icons";
 
   const ch_ = [
-    ["https://gsea-msigdb.org/gsea/index.jsp", "Gene-Set Enrichment Analysis"],
-    ["https://guardiome.com", "Guardiome"],
-    ["https://immunogram.io", "Immunogram"],
+    ["Gene-Set Enrichment Analysis", "https://gsea-msigdb.org/gsea/index.jsp"],
+    ["Guardiome", "https://guardiome.com"],
+    ["Immunogram", "https://immunogram.io"],
     [
-      "https://amazon.com/s?i=stripbooks&rh=p_27%3AKwat+Medetgul-Ernar&s=relevancerank&text=Kwat+Medetgul-Ernar&ref=dp_byline_sr_book_2",
       "Tiny Beasts",
+      "https://amazon.com/s?i=stripbooks&rh=p_27%3AKwat+Medetgul-Ernar&s=relevancerank&text=Kwat+Medetgul-Ernar&ref=dp_byline_sr_book_2",
     ],
-    ["https://mountjiujitsu.com", "Mount Jiu-Jitsu"],
+    ["Mount Jiu-Jitsu", "https://mountjiujitsu.com"],
   ];
 
   const co_ = [
@@ -47,7 +47,7 @@
       <h4>Check Out</h4>
       <nav>
         {#each ch_ as ch}
-          <a href={ch[0]}>{ch[1]}</a>
+          <a href={ch[1]}>{ch[0]}</a>
         {/each}
       </nav>
     </div>

@@ -26,7 +26,7 @@
 </svelte:head>
 <Header />
 {#key data.pa}
-  <main in:fade={{ duration: 100, delay: 100 }} out:fade={{ duration: 100 }}>
+  <main in:fade={{ duration: 140, delay: 140 }} out:fade={{ duration: 140 }}>
     <slot />
   </main>
 {/key}
