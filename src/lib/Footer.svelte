@@ -43,7 +43,7 @@
 
 <footer>
   <div class="fo1">
-    <div>
+    <div class="di">
       <h4>Check Out</h4>
       <nav>
         {#each ch_ as ch}
@@ -51,7 +51,7 @@
         {/each}
       </nav>
     </div>
-    <div>
+    <div class="di">
       <h4>Get Newsletter</h4>
       <form>
         <input type="email" required placeholder="Your Email Address" />
@@ -59,7 +59,7 @@
         <button type="submit">Coming Soon...</button>
       </form>
     </div>
-    <div>
+    <div class="di">
       <h4>Connect With Me</h4>
       <nav>
         {#each co_ as co}
@@ -68,7 +68,7 @@
       </nav>
     </div>
   </div>
-  <h4 class="fo2">© 2023 Kwat Medetgul-Ernar, All Rights Reserved.</h4>
+  <h4 class="fo2">© 2023 Kwat Medetgul-Ernar.</h4>
 </footer>
 
 <style lang="scss">
@@ -89,6 +89,10 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+  }
+
+  .di {
+    width: 33.3%;
   }
 
   input {
