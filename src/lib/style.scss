@@ -12,6 +12,7 @@
 body {
   height: 100vh;
   display: flex;
+  gap: $sp3;
   flex-direction: column;
   background: #aaaaaa;
   color: #27221f;

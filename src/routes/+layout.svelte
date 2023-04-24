@@ -34,7 +34,6 @@
 
 <style lang="scss">
   main {
-    margin-top: $sp3;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
