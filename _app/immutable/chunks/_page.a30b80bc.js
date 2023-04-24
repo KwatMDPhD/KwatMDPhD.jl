@@ -1,0 +1,1 @@
+import{g as a}from"./script.9a87e247.js";const n=async({fetch:c,params:e})=>{const{tag:t}=e,o=await a();return{tag:t,wr_:o.filter(r=>r.me.tag.includes(t))}},s=Object.freeze(Object.defineProperty({__proto__:null,load:n},Symbol.toStringTag,{value:"Module"}));export{s as _,n as l};
