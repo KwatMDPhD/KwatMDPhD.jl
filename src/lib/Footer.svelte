@@ -45,13 +45,11 @@
   <div class="fo1">
     <div>
       <h4>Check Out</h4>
-      <ul>
+      <nav>
         {#each ch_ as ch}
-          <li>
-            <a href={ch[0]}>{ch[1]}</a>
-          </li>
+          <a href={ch[0]}>{ch[1]}</a>
         {/each}
-      </ul>
+      </nav>
     </div>
     <div>
       <h4>Get Newsletter</h4>
@@ -63,25 +61,18 @@
     </div>
     <div>
       <h4>Connect With Me</h4>
-      <ul>
+      <nav>
         {#each co_ as co}
-          <li><a href={co[0]}><Fa icon={co[1]} /></a></li>
+          <a href={co[0]}><Fa icon={co[1]} /></a>
         {/each}
-      </ul>
+      </nav>
     </div>
   </div>
   <h4 class="fo2">© 2023 Kwat Medetgul-Ernar, All Rights Reserved.</h4>
 </footer>
 
-<style lang=scss>
-  $sp1: 1rem;
-
-  $sp2: 2rem;
-
-  $sp3: 4rem;
-
+<style lang="scss">
   footer {
-    margin-top: auto;
     background: $co1;
     text-align: center;
     color: #ffffff;
@@ -100,13 +91,6 @@
     flex-wrap: wrap;
   }
 
-  ul {
-    display: flex;
-    gap: $sp1;
-    flex-direction: column;
-    list-style: none;
-  }
-
   input {
     border: none;
     border-radius: 0.2rem;
@@ -122,5 +106,12 @@
     background: transparent;
     font-size: inherit;
     color: inherit;
+  }
+
+  nav {
+    display: flex;
+    gap: $sp1;
+    flex-direction: column;
+    list-style: none;
   }
 </style>

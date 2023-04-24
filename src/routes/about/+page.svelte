@@ -1,7 +1,6 @@
 <svelte:head>
   <title>About</title>
 </svelte:head>
-
 <h1>Hi, I'm Kwat!</h1>
 <br />
 <br />
@@ -31,7 +30,7 @@
 <br />
 <h2>My Projects 📈</h2>
 <br />
-<div class="pr">
+<div>
   <h4>
     <a href="https://gsea-msigdb.org/gsea/index.jsp"
       >✨ Gene-Set Enrichment Analysis</a
@@ -49,13 +48,9 @@
   <h4><a href="https://guardiome.com">🤫 Chopper Health</a> 👨‍⚕️</h4>
 </div>
 
-<style>
+<style lang="scss">
   * {
+    line-height: $sp2;
     text-align: center;
-    line-height: 2rem;
-  }
-
-  a {
-    text-decoration: none;
   }
 </style>

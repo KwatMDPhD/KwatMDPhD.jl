@@ -1,7 +1,7 @@
 <script>
-  import "$lib/style.scss";
-
   import "@fontsource/spectral";
+
+  import "$lib/style.scss";
 
   import Header from "$lib/Header.svelte";
 
@@ -27,7 +27,6 @@
     gtag("config", "G-8RQLPYYMCH");
   </script>
 </svelte:head>
-
 <Header />
 {#key data.pa}
   <main in:fade={{ duration: 160, delay: 160 }} out:fade={{ duration: 160 }}>
@@ -36,12 +35,12 @@
 {/key}
 <Footer />
 
-<style>
+<style lang="scss">
   main {
-    margin: 4rem auto;
+    margin: auto;
     max-width: 64rem;
     width: 100%;
-    padding: 1rem;
+    padding: $sp1;
     /* background: #bbbbbb; */
   }
 </style>

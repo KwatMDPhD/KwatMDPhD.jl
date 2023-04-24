@@ -2,28 +2,27 @@
   export let ti, wr_;
 </script>
 
-<h1 class="ti">{ti}</h1>
-<ul>
+<h1>{ti}</h1>
+<div class="li">
   {#each wr_ as wr}
-    <li>
+    <div>
       <h2><a href={wr.pa}>{wr.me.title}</a></h2>
-      <p>🗓️ {wr.me.date}</p>
-      <p>✍️ {wr.me.edit}</p>
-    </li>
-    <br />
+      <div>
+        <p>🗓️ {wr.me.date}</p>
+        <p>✍️ {wr.me.edit}</p>
+      </div>
+    </div>
   {/each}
-</ul>
+</div>
 
-<style>
-  .ti {
-    margin-bottom: 1rem;
+<style lang="scss">
+  h1 {
+    margin-bottom: $sp1;
   }
 
-  ul {
-    list-style: none;
-  }
-
-  a {
-    color: inherit;
+  .li {
+    display: flex;
+    gap: $sp1;
+    flex-direction: column;
   }
 </style>

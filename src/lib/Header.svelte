@@ -1,30 +1,28 @@
+<script>
+  const he_ = [
+    ["/", "Home"],
+    ["/writing", "Writing"],
+    ["/about", "About"],
+  ];
+</script>
+
 <header>
-  <a href="/">Home</a>
   <nav>
-    <ul>
-      <li><a href="/writing">Writing</a></li>
-      <li><a href="/about">About</a></li>
-    </ul>
+    {#each he_ as he}
+      <a href={he[0]}>{he[1]}</a>
+    {/each}
   </nav>
 </header>
 
 <style lang="scss">
   header {
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
     background: $co1;
     color: #ffffff;
   }
 
-  ul {
+  nav {
+    margin: $sp1;
     display: flex;
-    gap: 1rem;
-    list-style: none;
-  }
-
-  a {
-    text-decoration: none;
-    color: inherit;
+    gap: $sp1;
   }
 </style>

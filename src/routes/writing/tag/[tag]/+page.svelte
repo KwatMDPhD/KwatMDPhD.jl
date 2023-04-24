@@ -1,13 +1,14 @@
 <script>
-  import WritingList from "$lib/WritingList.svelte";
-
   export let data;
 
-  const { tag } = data;
+  const { tag, wr_ } = data;
+
+  const ti = `Writing / ${tag}`;
+
+  import WritingList from "$lib/WritingList.svelte";
 </script>
 
 <svelte:head>
-  <title>Writing / {tag}</title>
+  <title>{ti}</title>
 </svelte:head>
-
-<WritingList ti={tag} wr_={data.wr_} />
+<WritingList {ti} {wr_} />
