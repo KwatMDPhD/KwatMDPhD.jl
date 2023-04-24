@@ -1,10 +1,15 @@
 <script>
   import { page } from "$app/stores";
+
+  const {
+    status,
+    error: { message },
+  } = $page;
+
+  const ti = `${status}: ${message}`;
 </script>
 
-<h1>{$page.status}</h1>
-<p>{$page.error.message}</p>
-
+<h1>{ti}</h1>
 <a href="/">Go Back Home</a>
 
 <style lang="scss">
