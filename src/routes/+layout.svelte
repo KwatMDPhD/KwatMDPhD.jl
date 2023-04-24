@@ -40,6 +40,6 @@
     max-width: 64rem;
     width: 100%;
     padding: $sp1;
-    background: #bbbbbb;
+    /* background: #bbbbbb; */
   }
 </style>

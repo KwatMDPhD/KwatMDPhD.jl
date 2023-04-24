@@ -3,7 +3,7 @@
 </script>
 
 <h1>{ti}</h1>
-<div class="li">
+<div class="di1">
   {#each wr_ as wr}
     <div>
       <h2><a href={wr.pa}>{wr.me.title}</a></h2>
@@ -16,11 +16,8 @@
 </div>
 
 <style lang="scss">
-  h1 {
-    margin-bottom: $sp1;
-  }
-
-  .li {
+  .di1 {
+    margin-top: $sp1;
     display: flex;
     gap: $sp1;
     flex-direction: column;

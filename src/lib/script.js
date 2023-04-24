@@ -5,11 +5,9 @@ export const get_writing = async () => {
     gle_.map(async ([pa, re]) => {
       const { metadata } = await re();
 
-      const pas = pa.slice(11, -3);
-
       return {
         me: metadata,
-        pa: pas,
+        pa: pa.slice(11, -3),
       };
     })
   );

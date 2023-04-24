@@ -1,10 +1,12 @@
 <script>
   export let data;
 
+  const ti = "Writing";
+
   import WritingList from "$lib/WritingList.svelte";
 </script>
 
 <svelte:head>
-  <title>Writing</title>
+  <title>{ti}</title>
 </svelte:head>
-<WritingList ti="Opinions Are My Own." wr_={data.wr_} />
+<WritingList {ti} wr_={data.wr_} />

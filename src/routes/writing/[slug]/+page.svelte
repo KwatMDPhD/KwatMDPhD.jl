@@ -27,11 +27,11 @@
     display: flex;
     gap: $sp1;
     flex-direction: column;
-    /* background: #dddddd; */
+    /* background: #cccccc; */
   }
 
   .co {
-    /* object-fit: cover; */
+    object-fit: cover;
     height: 24rem;
   }
 
@@ -39,5 +39,6 @@
     margin-top: $sp2;
     display: flex;
     gap: 1rem;
+    justify-content: center;
   }
 </style>
