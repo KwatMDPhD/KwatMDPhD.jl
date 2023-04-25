@@ -1,4 +1,4 @@
-📍
+## Description
 
 Bioinformatician 🧬🧑‍💻
 MD-PhD candidate at Stanford 🩺🌲
