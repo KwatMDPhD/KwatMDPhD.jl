@@ -9,7 +9,7 @@
   {#each wr_ as wr}
     {#if wr.me.publish != ""}
       <div>
-        <h2><a href={wr.href}>{wr.me.title}</a></h2>
+        <h2><a href="/writing/{wr.na}">{wr.me.title}</a></h2>
         <Date publish={wr.me.publish} edit={wr.me.edit} />
       </div>
     {/if}

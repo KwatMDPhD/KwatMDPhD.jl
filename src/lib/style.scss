@@ -37,29 +37,13 @@ body {
 }
 
 a {
-  position: relative;
-  text-decoration: none;
   color: inherit;
-
-  &::after {
-    position: absolute;
-    content: "";
-    background: rgba(#20d9ba, 0.8);
-    height: 0.1ch;
-    width: 100%;
-    bottom: -0.1ch;
-    left: 0;
-    transition: 0.4s cubic-bezier(0.2, 0.1, 0, 1);
-  }
+  text-underline-offset: 0.2rem;
+  text-decoration-thickness: 0.1rem;
+  text-decoration-color: $co1;
 
   &:hover {
-    color: #ffffff;
-  }
-
-  &:hover:after {
-    bottom: 0;
-    z-index: -1;
-    height: 100%;
+    text-decoration-color: $co2;
   }
 }
 

@@ -37,7 +37,6 @@
   aside {
     margin-top: $sp2;
     display: flex;
-    gap: 1rem;
-    justify-content: center;
+    gap: $sp1;
   }
 </style>
