@@ -1,5 +1,18 @@
 <script>
+  import A from "$lib/A.svelte";
+
   import Fa from "svelte-fa";
+
+  const ch_ = [
+    ["Gene-Set Enrichment Analysis", "https://gsea-msigdb.org/gsea/index.jsp"],
+    ["Guardiome", "https://guardiome.com"],
+    ["Immunogram", "https://immunogram.io"],
+    [
+      "Tiny Beasts",
+      "https://amazon.com/s?i=stripbooks&rh=p_27%3AKwat+Medetgul-Ernar&s=relevancerank&text=Kwat+Medetgul-Ernar&ref=dp_byline_sr_book_2",
+    ],
+    ["Mount Jiu-Jitsu", "https://mountjiujitsu.com"],
+  ];
 
   import {
     faNewspaper,
@@ -14,17 +27,6 @@
     faInstagram,
     faDiscord,
   } from "@fortawesome/free-brands-svg-icons";
-
-  const ch_ = [
-    ["Gene-Set Enrichment Analysis", "https://gsea-msigdb.org/gsea/index.jsp"],
-    ["Guardiome", "https://guardiome.com"],
-    ["Immunogram", "https://immunogram.io"],
-    [
-      "Tiny Beasts",
-      "https://amazon.com/s?i=stripbooks&rh=p_27%3AKwat+Medetgul-Ernar&s=relevancerank&text=Kwat+Medetgul-Ernar&ref=dp_byline_sr_book_2",
-    ],
-    ["Mount Jiu-Jitsu", "https://mountjiujitsu.com"],
-  ];
 
   const co_ = [
     ["https://github.com/KwatMDPhD", faGithub],
@@ -47,7 +49,7 @@
       <h4>Check Out</h4>
       <nav>
         {#each ch_ as ch}
-          <a href={ch[1]}>{ch[0]}</a>
+          <A href={ch[1]}>{ch[0]}</A>
         {/each}
       </nav>
     </div>
@@ -63,7 +65,7 @@
       <h4>Connect With Me</h4>
       <nav>
         {#each co_ as co}
-          <a href={co[0]}><Fa icon={co[1]} /></a>
+          <A href={co[0]}><Fa icon={co[1]} /></A>
         {/each}
       </nav>
     </div>

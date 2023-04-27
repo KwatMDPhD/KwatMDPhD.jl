@@ -1,7 +1,9 @@
 <script>
   export let data;
 
-  const { date, edit, title, cover, tag, Content } = data;
+  import Date from "$lib/Date.svelte";
+
+  const { publish, edit, title, cover, tag, Content } = data;
 </script>
 
 <svelte:head>
@@ -9,10 +11,7 @@
 </svelte:head>
 <article>
   <h1>{title}</h1>
-  <div>
-    <p>🗓️ {date}</p>
-    <p>✍️ {edit}</p>
-  </div>
+  <Date {publish} {edit} />
   <img class="co" src="/image/{cover}" alt="{cover}." />
   <Content />
 </article>

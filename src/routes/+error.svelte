@@ -9,6 +9,9 @@
   const ti = `${status}: ${message}`;
 </script>
 
+<svelte:head>
+  <title>{ti}</title>
+</svelte:head>
 <h1>{ti}</h1>
 <a href="/">Go Back Home</a>
 

@@ -1,17 +1,18 @@
 <script>
   export let ti, wr_;
+
+  import Date from "$lib/Date.svelte";
 </script>
 
 <h1>{ti}</h1>
 <div class="di1">
   {#each wr_ as wr}
-    <div>
-      <h2><a href={wr.pa}>{wr.me.title}</a></h2>
+    {#if wr.me.publish != ""}
       <div>
-        <p>🗓️ {wr.me.date}</p>
-        <p>✍️ {wr.me.edit}</p>
+        <h2><a href={wr.href}>{wr.me.title}</a></h2>
+        <Date publish={wr.me.publish} edit={wr.me.edit} />
       </div>
-    </div>
+    {/if}
   {/each}
 </div>
 

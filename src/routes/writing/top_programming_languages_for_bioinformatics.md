@@ -1,5 +1,5 @@
 ---
-date: "2023.04.19"
+publish: "2023.04.19"
 edit: "2023.04.26"
 title: Top Programming Languages for Bioinformatics
 cover: r.png

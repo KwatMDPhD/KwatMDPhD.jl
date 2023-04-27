@@ -5,6 +5,8 @@
 
   import { fade } from "svelte/transition";
 
+  const fa = 171;
+
   import Footer from "$lib/Footer.svelte";
 
   import "$lib/style.scss";
@@ -26,7 +28,7 @@
 </svelte:head>
 <Header />
 {#key data.pa}
-  <main in:fade={{ duration: 140, delay: 140 }} out:fade={{ duration: 140 }}>
+  <main in:fade={{ duration: fa, delay: fa }} out:fade={{ duration: fa }}>
     <slot />
   </main>
 {/key}

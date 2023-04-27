@@ -1,6 +1,6 @@
 ---
-date: "2023.04.26"
-edit: ""
+publish: ""
+edit: "2023.04.26"
 title: Immunogram
 cover: cover.jpeg
 tag:
@@ -59,10 +59,9 @@ It should measure measure a handful of things that are each super interpretable 
 ##
 
 So, what should we measure in the immune system?
-There are multiple immune organs, and the entire system is spread throughout the body. 
+There are multiple immune organs, and the entire system is spread throughout the body.
 
-
-## 
+##
 
 Today, people are paying more attention to their immune system than ever.
 Scientists are finding more about how the immune system affects many disorders.
@@ -80,9 +79,9 @@ We call this tool Immunogram.
 Immunogram is not a new assay or a new device.
 Immunogram is a computational tool that analyzes data from existing assays to summarizes a person's immune system.
 
-## 
+##
 
 There is no metric to measure the human immune system.
 There are ways to measure parts of the system.
 But there is no way to measure the whole thing.
-My project is making 
+My project is making

@@ -7,7 +7,7 @@ export const get_writing = async () => {
 
       return {
         me: metadata,
-        pa: pa.slice(11, -3),
+        href: pa.slice(11, -3),
       };
     })
   );

@@ -1,4 +1,6 @@
 <script>
+  import A from "$lib/A.svelte";
+
   const jo_ = [
     "Nomad from Kazakhstan 🏔️👶🐎🍼🇰🇿",
     "China 🇨🇳",
@@ -48,7 +50,7 @@
   <div>
     <h2>My Projects 📈</h2>
     {#each pr_ as pr}
-      <h4><a href={pr[1]}>{pr[0]}</a></h4>
+      <h4><A href={pr[1]}>{pr[0]}</A></h4>
     {/each}
   </div>
 </div>
