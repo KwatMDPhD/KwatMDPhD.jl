@@ -1,1 +1,0 @@
-import{_ as i}from"./preload-helper.41c905a7.js";const o=async()=>{const t=Object.entries(Object.assign({"/src/routes/writing/1.md":()=>i(()=>import("./1.c86d4bd3.js"),["./1.c86d4bd3.js","./index.05a2c346.js"],import.meta.url)}));return await Promise.all(t.map(async([e,r])=>{const{metadata:a}=await r();return{me:a,pa:e.slice(11,-3)}}))};export{o as g};
