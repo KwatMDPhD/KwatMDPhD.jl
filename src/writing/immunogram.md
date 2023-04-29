@@ -8,6 +8,70 @@ tag:
   - "Bioinformatics"
 ---
 
+## Hello everyone; my name is Kwat Medetgul-Ernar.
+
+I'm in the Mark Davis Lab.
+I'll tell you about Immunogram, which is what I've been building in the Lab.
+
+## Immunogram (ImG) is a computational tool for measuring a person's entire immune system.
+
+The immune system is hot.
+Scientists want to measure it and people also want to know about their own.
+But there are only ways to measure parts of the system, but not the whole thing.
+If successful, ImG can become this missing technology.
+I'll show you how we are building ImG.
+
+## The Process.
+
+This is the process for building ImG and using it.
+
+##
+
+Hi my name is Kwat.
+I'll tell you about my project from the Mark Davis Lab.
+
+Before I start, in the spirit of lunch, I will go faster.
+If you have any technical questions please find me later.
+
+Immunology ("the"?) is hot.
+Scientists are finding out more ways the immune system impacts the health.
+The Pandemic has popularized immunology.
+People are reaching out to supplements and other interventions to improve their immune system.
+Immunology is more important then ever.
+
+However, surprisingly, there is no way to measure a person's entire immune system.
+There are ways to measure parts of the system, like the complete blood count and antibody tests.
+But there is no metric for immune system.
+The immune system is important, but we don't have a way to measure it well.
+
+This is where my project comes in.
+We're making a way to measure as much of a person's immune system.
+We call this way "Immunogram".
+
+Immunogram is not a new device or a new assay.
+It is a computational tool that analyzes data from assays that we can already perform in a person's blood.
+
+So I want to tell you about the design principles behind it, walk you through the process for making one, show you some analytics using parts of the process, and finally show you a dummy Immunogram made to predict Influenza-vaccine response.
+
+We named immunogram after electrocardiogram, because ECG has some meta attributes that we want for Immunogram.
+In addition, ECG can be used for humans and animals.
+ECG is a 100-plus-years-old technology, but it is super popular.
+This is because ECG is simple, transparent, and interpretable.
+Instead of measuring 1000s of loci, it measures handful of loci.
+Signal received at each location is interpretable by itself.
+But the combination of the signals received at all loci give a nice picture of the heart.
+
+We want Immunogram to be something like this.
+Instead of having to analyze a person's big data to give a report of the person's immune system, we want to measure just a handful of things.
+Each thing must be interpretable like transmigration, phagocytosis, and antigen presentation.
+And a clinician should be able use the knowledge from M1 immunology to give a global assessment of the person's immune system.
+
+Next I will tell you about how come up with these handful of things.
+Here is the process.
+There are 2 parts for coming up with these things.
+And once you have a working and well-benchmarked Immunogram, it's super easy to map the data from a person and use this Immunogram to summarize this person's entire immune system.
+And of this process.
+
 ## Greeting
 
 ## Introduction
