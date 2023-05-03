@@ -11,7 +11,7 @@ Entrepreneur 🔄📈
 
 The intersection between medicine and science (especially immunology!) is fascinating 🩺🧬🤩
 In this podcast, Kwat Medetgul-Ernar (an MD-PhD candidate at Stanford) explains biomedical science with a splash of humor 🥼🤣
-If you want to increase your biomedical knowledge, this show is for you 📚📈🌲
+This show is for scientists and non-scientists alike; if you want to increase your biomedical knowledge, this show is for you 📚📈🌲
 
 Connect with me at https://KwatMDPhD.com 📍
 
