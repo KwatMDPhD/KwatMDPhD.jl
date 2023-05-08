@@ -1,1 +1,0 @@
-import{g as t}from"./script.49f4f34e.js";const e=async({fetch:o})=>({wr_:await t()}),n=Object.freeze(Object.defineProperty({__proto__:null,load:e},Symbol.toStringTag,{value:"Module"}));export{n as _,e as l};
