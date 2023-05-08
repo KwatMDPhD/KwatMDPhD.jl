@@ -31,7 +31,7 @@
 
   .co {
     object-fit: cover;
-    height: 24rem;
+    height: 32rem;
     margin-bottom: $sp2;
   }
 

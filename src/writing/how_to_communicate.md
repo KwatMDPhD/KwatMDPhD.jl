@@ -1,8 +1,8 @@
 ---
 publish: "2023.05.07"
 edit: ""
-title: How to Communicate Better
-cover: communicate.jpeg
+title: How to Communicate
+cover: talk.jpeg
 tag:
   - "How-To"
 ---
