@@ -94,7 +94,7 @@
   }
 
   .di {
-    width: 33.3%;
+    min-width: 33.3%;
   }
 
   input {
