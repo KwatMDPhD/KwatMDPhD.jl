@@ -2,7 +2,7 @@
 publish: "2023.05.07"
 edit: ""
 title: How to Communicate
-cover: talk.jpeg
+cover: /media/talking.jpeg
 tag:
   - "How-To"
 ---
@@ -39,8 +39,8 @@ Use close-ended questions to clarify.
 
 ## Communication Habits
 
-<img src=/image/communication_habits.png alt="Communication Habits" width=92%>
+<img src=/media/communication_habits.png alt="Communication habits." width=92%>
 
 ## Communicating a Bad News
 
-<img src=/image/communicating_a_bad_news.png alt="Communicating a Bad News" width=64%>
+<img src=/media/communicating_bad_news.png alt="Communicating bad news." width=64%>

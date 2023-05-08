@@ -6,7 +6,7 @@ export const get_writing = async () => {
       const { metadata } = await re();
 
       return {
-        na: pa.slice(13, -3),
+        sl: pa.slice(13, -3),
         me: metadata,
       };
     })

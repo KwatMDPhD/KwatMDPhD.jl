@@ -2,7 +2,7 @@
 publish: "2023.05.07"
 edit: ""
 title: How to Hunt
-cover: hunt.jpeg
+cover: /media/hunting.jpeg
 tag:
   - "How-To"
 ---

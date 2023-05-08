@@ -12,7 +12,7 @@
 <article>
   <h1>{title}</h1>
   <Date {publish} {edit} />
-  <img class="co" src="/image/{cover}" alt="{cover}." />
+  <img class="co" src={cover} alt="Cover." />
   <Content />
 </article>
 <aside>

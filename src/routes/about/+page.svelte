@@ -35,11 +35,7 @@
 </svelte:head>
 <div class="di1">
   <h1>Hi, I'm Kwat!</h1>
-  <img
-    class="pi"
-    src="/image/profile_picture.jpeg"
-    alt="Kwat Medetgul-Ernar."
-  />
+  <img class="pi" src="/media/profile.jpeg" alt="Profile." />
   <div>
     <h2>My Journey 🛣️</h2>
     {#each jo_ as jo}

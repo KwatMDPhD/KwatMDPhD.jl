@@ -2,7 +2,7 @@
 publish: ""
 edit: "2023.05.07"
 title: How to Jiu-Jitsu
-cover: jiu_jitsu.jpeg
+cover: /media/jiu_jitsu.jpeg
 tag:
   - "How-To"
 ---

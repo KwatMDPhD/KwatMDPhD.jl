@@ -2,7 +2,7 @@
 publish: "2023.05.07"
 edit: ""
 title: How to Live
-cover: sand_clock.jpeg
+cover: /media/sand_clock.jpeg
 tag:
   - "How-To"
 ---
