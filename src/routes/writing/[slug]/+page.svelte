@@ -32,10 +32,11 @@
   .co {
     object-fit: cover;
     height: 24rem;
+    margin-bottom: $sp2;
   }
 
   aside {
-    margin-top: $sp2;
+    margin-top: $sp3;
     display: flex;
     gap: $sp1;
   }
