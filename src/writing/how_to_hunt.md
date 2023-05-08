@@ -57,7 +57,7 @@ Trash bags
 
 Hauling pack
 
-Jacket - Camouflage (or Orange)
+Jacket - Camouflage (or orange)
 
 ## Go
 
