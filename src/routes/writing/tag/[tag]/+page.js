@@ -7,6 +7,6 @@ export const load = async ({ fetch, params }) => {
 
   return {
     tag,
-    wr_: wr_.filter((wr) => wr.me.tag.includes(tag)),
+    wr_: wr_.filter((wr) => wr.tag.includes(tag)),
   };
 };
