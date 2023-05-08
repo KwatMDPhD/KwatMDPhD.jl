@@ -7,7 +7,7 @@ export const get_writing = async () => {
 
       return {
         sl: pa.slice(13, -3),
-        me: metadata,
+        ...metadata,
       };
     })
   );

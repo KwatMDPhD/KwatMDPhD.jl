@@ -10,9 +10,11 @@
   <title>Writing / {title}</title>
 </svelte:head>
 <article>
-  <h1>{title}</h1>
-  <Date {publish} {edit} />
-  <img class="co" src={cover} alt="Cover." />
+  <div>
+    <h1>{title}</h1>
+    <img src={cover} alt="Cover." />
+    <Date {publish} {edit} />
+  </div>
   <Content />
 </article>
 <aside>
@@ -22,21 +24,22 @@
 </aside>
 
 <style lang="scss">
-  article {
+  div {
     display: flex;
     gap: $sp1;
     flex-direction: column;
-    /* background: #cccccc; */
-  }
-
-  .co {
-    object-fit: cover;
-    height: 32rem;
     margin-bottom: $sp2;
   }
 
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 32rem;
+    box-shadow: 0 $sp1 $sp1 0 rgba(#000000, 0.16);
+  }
+
   aside {
-    margin-top: $sp3;
+    margin-top: $sp2;
     display: flex;
     gap: $sp1;
   }

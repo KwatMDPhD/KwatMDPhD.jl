@@ -44,8 +44,8 @@
 </script>
 
 <footer>
-  <div class="fo1">
-    <div class="di">
+  <div class="di1">
+    <div class="di2">
       <h4>Check Out</h4>
       <nav>
         {#each ch_ as ch}
@@ -53,7 +53,7 @@
         {/each}
       </nav>
     </div>
-    <div class="di">
+    <div class="di2">
       <h4>Get Newsletter</h4>
       <form>
         <input type="email" required placeholder="Your Email Address" />
@@ -61,7 +61,7 @@
         <button type="submit">Coming Soon...</button>
       </form>
     </div>
-    <div class="di">
+    <div class="di2">
       <h4>Connect With Me</h4>
       <nav>
         {#each co_ as co}
@@ -70,7 +70,7 @@
       </nav>
     </div>
   </div>
-  <h4 class="fo2">© 2023 Kwat Medetgul-Ernar.</h4>
+  <h4>© 2023 Kwat Medetgul-Ernar.</h4>
 </footer>
 
 <style lang="scss">
@@ -87,13 +87,13 @@
     font-weight: 200;
   }
 
-  .fo1 {
+  .di1 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
 
-  .di {
+  .di2 {
     min-width: 33.3%;
   }
 

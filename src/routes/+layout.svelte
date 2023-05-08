@@ -5,7 +5,7 @@
 
   import { fade } from "svelte/transition";
 
-  const fa = 171;
+  const fa = 240;
 
   import Footer from "$lib/Footer.svelte";
 
