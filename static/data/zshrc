@@ -1,0 +1,231 @@
+# =============================================================================================== #
+# Color
+# ----------------------------------------------------------------------------------------------- #
+
+FONT_DEFAULT="$(tput sgr0)"
+
+FONT_BOLD="$(tput bold)"
+
+FONT_EMERALD="\033[38;5;43m"
+
+FONT_PURPLE="\033[38;5;93m"
+
+FONT_BLUE="\033[38;5;4m"
+
+# =============================================================================================== #
+# Alias
+# ----------------------------------------------------------------------------------------------- #
+
+alias ..="cd .."
+
+alias ...="cd ../.."
+
+alias ....="cd ../../.."
+
+alias ls="ls -hG"
+
+alias ll="ls -l"
+
+alias la="ls -lA"
+
+alias lt="ls -ltr"
+
+alias tree="tree -h"
+
+alias du="du -h"
+
+alias df="df -h"
+
+alias grep="grep --color"
+
+alias mkdir="mkdir -pv"
+
+alias cp="cp -i"
+
+alias mv="mv -i"
+
+alias rsync="rsync --archive --verbose --itemize-changes --human-readable --progress --stats"
+
+alias rm="rm -i"
+
+alias ju="julia --project"
+
+# =============================================================================================== #
+# Function
+# ----------------------------------------------------------------------------------------------- #
+
+function extract() {
+
+	if [ -f $1 ]; then
+
+		case $1 in
+
+		*.tar.bz2) tar xvjf $1 ;;
+
+		*.tar.gz) tar xvzf $1 ;;
+
+		*.bz2) bzip2 -dk $1 ;;
+
+		*.rar) unrar x $1 ;;
+
+		*.gz) gunzip $1 ;;
+
+		*.bgz) bgzip $1 ;;
+
+		*.tar) tar xvf $1 ;;
+
+		*.tbz2) tar xvjf $1 ;;
+
+		*.tgz) tar xvzf $1 ;;
+
+		*.zip) unzip $1 ;;
+
+		*.Z) uncompress $1 ;;
+
+		*.7z) 7z x $1 ;;
+
+		*) printf "Failed to extract $1\n" ;;
+
+		esac
+
+	fi
+
+}
+
+function clean-name() {
+
+	rename --sanitize --lower-case --expr "s/-/_/g" --force $1
+
+}
+
+function recursively-rm() {
+
+	pa_=(".DS_Store" ".localized" ".com.apple.*" ".~*" "*.swp" "__pycache__" "*.pyc" ".ipynb_checkpoints") &&
+
+	for pa in $pa_
+
+	do
+
+		find . -iname "$pa" -prune -print0 | xargs -0 rm -rf
+
+	done
+
+}
+
+function recursively-chmod() {
+
+    ig="-not -path \"*/.git/*\" -not -path \"*/node_modules/*\" -not -path \"*/.svelte-kit/*\""
+
+    find . -type f $(echo $ig) -print0 | xargs -0 chmod 644 &&
+
+	find . -type d $(echo $ig) -print0 | xargs -0 chmod 755
+
+}
+
+function recursively-sed() {
+
+	rg --files-with-matches $1 | xargs sed -i "" "s/$1/$2/g"
+
+}
+
+function recursively-clean-jl() {
+
+	find -E . -type f -regex ".*\.(jl|ipynb)" -print0 | xargs -0 clean-jl
+
+}
+
+function recursively-clean-web() {
+
+	find -E . -type f -size -1M -regex ".*\.(json|md|html|css|scss|js|jsx|ts|tsx|svelte)" -print0 | xargs -0 prettier --write
+
+}
+
+function recursively-kata() {
+
+	for pa in $(find -E . -type d -regex ".*\.(jl|pro)")
+
+	do
+
+		pushd $pa &&
+
+		printf "$FONT_BOLD$FONT_PURPLE$(pwd)$FONT_DEFAULT\n" &&
+
+		kata format &&
+
+		kata call $1 &&
+
+		popd
+
+	done
+
+}
+
+function recursively-git-fetch-status-diff() {
+
+	for pa in $(find -E . -type d -regex ".*\.git")
+
+	do
+
+		pushd $pa/../ &&
+
+		printf "$FONT_BOLD$FONT_EMERALD$(pwd)$FONT_DEFAULT\n" &&
+
+		git fetch &&
+
+		git status &&
+
+		git diff &&
+
+		popd
+
+	done
+
+}
+
+function recursively-git-add-commit-push() {
+
+	for pa in $(find -E . -type d -regex ".*\.git")
+
+	do
+
+		pushd $pa/../
+
+		printf "$FONT_BOLD$FONT_EMERALD$(pwd)$FONT_DEFAULT\n"
+
+		git add -A
+
+		git commit -m "$1"
+
+        git pull
+
+		git push
+
+		popd
+
+	done
+
+}
+
+function recursively-housekeep() {
+
+	recursively-rm &&
+
+	recursively-clean-jl &&
+
+	recursively-clean-web &&
+
+	recursively-kata "$1" &&
+
+	recursively-git-add-commit-push "$2"
+
+}
+
+# =============================================================================================== #
+# Style
+# ----------------------------------------------------------------------------------------------- #
+
+PROMPT="%B%~%b "
+
+RPROMPT=" %B%*%b"
+
+screen -list

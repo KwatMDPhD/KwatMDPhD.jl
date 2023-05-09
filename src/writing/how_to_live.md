@@ -1,10 +1,10 @@
 ---
-publish: "2023.05.07"
+publish: 2023.05.07
 edit: ""
 title: How to Live
-cover: /media/sand_clock.jpeg
+cover: /media/sand_clock.jpg
 tag:
-  - "How-To"
+  - How-To
 ---
 
 ## Abstract

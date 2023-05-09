@@ -1,10 +1,11 @@
 ---
-publish: ""
-edit: "2023.05.07"
+publish: "2023.05.08"
+edit: ""
 title: How to Jiu-Jitsu
-cover: /media/jiu_jitsu.jpeg
+cover: /media/jiu_jitsu.jpg
 tag:
-  - "How-To"
+  - How-To
+  - Jiu-Jitsu
 ---
 
 ## Roll

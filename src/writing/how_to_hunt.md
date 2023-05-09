@@ -1,10 +1,11 @@
 ---
-publish: "2023.05.07"
+publish: 2023.05.07
 edit: ""
 title: How to Hunt
-cover: /media/hunting.jpeg
+cover: /media/hunting.jpg
 tag:
-  - "How-To"
+  - How-To
+  - Hunting
 ---
 
 ## Apply

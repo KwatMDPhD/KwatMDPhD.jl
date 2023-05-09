@@ -1,11 +1,11 @@
 ---
-publish: "2023.04.19"
-edit: "2023.04.26"
+publish: 2023.04.19
+edit: 2023.04.26
 title: Top Programming Languages for Bioinformatics
 cover: /media/r.png
 tag:
-  - "Coding"
-  - "Bioinformatics"
+  - Coding
+  - Bioinformatics
 ---
 
 Are you a graduate student? Post-doc? Or whoever starting to pick up a programming language to analyze your data?

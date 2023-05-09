@@ -1,10 +1,10 @@
 ---
-publish: "2023.05.07"
+publish: 2023.05.07
 edit: ""
 title: How to Communicate
-cover: /media/talking.jpeg
+cover: /media/talking.jpg
 tag:
-  - "How-To"
+  - How-To
 ---
 
 ## Plan a Communication
