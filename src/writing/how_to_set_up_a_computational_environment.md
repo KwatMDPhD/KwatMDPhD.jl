@@ -313,7 +313,7 @@ https://julialang.org/downloads
 ```bash
 mkdir /usr/local/bin &&
 
-ln -s /Applications/Julia-1.8.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia
+ln -s /Applications/Julia-1.9.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia
 ```
 
 ```julia
