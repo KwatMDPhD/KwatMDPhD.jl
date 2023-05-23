@@ -1,16 +1,13 @@
-for pa in ("AbbreviatedStackTraces", "BenchmarkTools", "Revise")
+println("🔌 Using AbbreviatedStackTraces")
+using AbbreviatedStackTraces
 
-    println("🔌 Using $pa")
+if isinteractive()
 
-    try
+    println("🔌 Using BenchmarkTools")
+    using BenchmarkTools
 
-        eval(Meta.parse("using $pa"))
-
-    catch er
-
-        @warn "🙅‍♀️" er
-
-    end
+    println("🔌 Using Revise")
+    using Revise
 
 end
 
