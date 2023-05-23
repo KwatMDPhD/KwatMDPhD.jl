@@ -319,7 +319,7 @@ ln -s /Applications/Julia-1.9.app/Contents/Resources/julia/bin/julia /usr/local/
 ```julia
 using Pkg: add
 
-for pa in ("AbbreviatedStackTraces", "BenchmarkTools", "Revise")
+for pa in ("AbbreviatedStackTraces", "BenchmarkTools", "JuliaFormatter", "Revise")
 
     add(pa)
 
