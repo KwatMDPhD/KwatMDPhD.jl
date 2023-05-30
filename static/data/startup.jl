@@ -1,12 +1,18 @@
-println("🔌 Using AbbreviatedStackTraces")
-using AbbreviatedStackTraces
+try
+
+    using AbbreviatedStackTraces
+    println("Using AbbreviatedStackTraces")
+
+catch
+
+end
 
 if isinteractive()
 
-    println("🔌 Using BenchmarkTools")
+    println("Using BenchmarkTools")
     using BenchmarkTools
 
-    println("🔌 Using Revise")
+    println("Using Revise")
     using Revise
 
 end
