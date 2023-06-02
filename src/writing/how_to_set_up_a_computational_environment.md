@@ -332,6 +332,10 @@ mkdir -p ~/.julia/config &&
 cp startup.jl ~/.julia/config
 ```
 
+```bash
+cp JuliaFormatter.toml ~/.JuliaFormatter.toml
+```
+
 ## Set `node`
 
 ```bash
