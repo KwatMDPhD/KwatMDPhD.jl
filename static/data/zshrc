@@ -130,7 +130,7 @@ function recursively-sed() {
 
 function recursively-clean-jl() {
 
-	find -E . -type f -regex ".*\.(jl|ipynb)" -print0 | xargs -0 clean-jl
+	julia --eval "using JuliaFormatter; format(\".\")"
 
 }
 
