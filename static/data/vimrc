@@ -42,7 +42,7 @@ set lazyredraw
 
 set wildmenu
 
-set guifont=Menlo-Regular:h15
+set guifont=Menlo-Regular:h13
 
 set guicursor+=a:blinkon0
 
@@ -64,9 +64,9 @@ set spell
 
 set linebreak
 
-set scrolloff=4
+set scrolloff=1
 
-set sidescrolloff=4
+set sidescrolloff=1
 
 set nofoldenable
 
@@ -89,34 +89,6 @@ set smartcase
 set showmatch
 
 set mps+=<:>
-
-" =============================================================================================== "
-" Style highlight
-" ----------------------------------------------------------------------------------------------- "
-
-highlight Search ctermbg=92 ctermfg=yellow guibg=#9017e6 guifg=#ffff00
-
-" =============================================================================================== "
-" Highlight word-under-cursor instances
-" ----------------------------------------------------------------------------------------------- "
-
-highlight WordUnderCursor cterm=underline,bold gui=underline,bold
-
-autocmd CursorHold * call HighlightCursorWord()
-
-function! HighlightCursorWord()
-
-    let search = getreg('/')
-
-    let cword = expand('<cword>')
-
-    if match(cword, search) == -1
-
-        exe printf('match WordUnderCursor /\V\<%s\>/', escape(cword, '/\'))
-
-    endif
-
-endfunction
 
 " =============================================================================================== "
 " Map
@@ -146,11 +118,13 @@ Plug 'sainnhe/gruvbox-material'
 
 Plug 'EdenEast/nightfox.nvim'
 
+"Plug 'dominikduda/vim_current_word'
+
 Plug 'luochen1990/rainbow'
 
 Plug 'airblade/vim-gitgutter'
 
-Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline'
 
 Plug 'preservim/nerdtree'
 
@@ -164,7 +138,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
 Plug 'junegunn/fzf.vim'
 
-Plug 'tpope/vim-commentary'
+" Plug 'tpope/vim-commentary'
 
 Plug 'sheerun/vim-polyglot'
 
@@ -182,9 +156,9 @@ call plug#end()
 " colorscheme
 " ----------------------------------------------------------------------------------------------- "
 
-set background=dark
-
 colorscheme carbonfox
+
+highlight Search guibg=#fbb92d guifg=#561649
 
 " =============================================================================================== "
 " rainbow
