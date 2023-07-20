@@ -9,6 +9,6 @@ export const get_writing = async () => {
         sl: pa.slice(13, -3),
         ...metadata,
       };
-    })
+    }),
   );
 };
