@@ -1,7 +1,8 @@
 try
 
     using AbbreviatedStackTraces
-    println("Using AbbreviatedStackTraces")
+
+    @info "Using AbbreviatedStackTraces"
 
 catch
 
@@ -9,16 +10,30 @@ end
 
 if isinteractive()
 
-    println("Using BenchmarkTools")
-    using BenchmarkTools
+    try
 
-    println("Using Revise")
-    using Revise
+        using BenchmarkTools
+
+        @info "Using BenchmarkTools"
+
+    catch
+
+    end
+
+    try
+
+        using Revise
+
+        @info "Using Revise"
+
+    catch
+
+    end
 
 end
 
-ENV["LINES"] = 40
+#ENV["LINES"] = 40
 
-ENV["COLUMNS"] = 80
+#ENV["COLUMNS"] = 80
 
 ENV["JULIA_STACKTRACE_ABBREVIATED"] = true
