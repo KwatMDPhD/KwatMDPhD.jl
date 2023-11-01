@@ -30,6 +30,8 @@ https://bkamins.github.io/julialang/2021/01/08/typestable.html
 
 https://discourse.julialang.org/t/whats-the-difference-between-fields-and-properties/12495/7
 
+https://jkrumbiegel.com/pages/2020-10-31-tuples-and-vectors
+
 ## TODO
 
 The parser does not see types and separates the code into blocks.

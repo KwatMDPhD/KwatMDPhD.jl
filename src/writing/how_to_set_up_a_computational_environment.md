@@ -271,7 +271,7 @@ cp vimrc ~/.vimrc
 https://brew.sh
 
 ```bash
-brew install screen tree rename watch macvim fzf ripgrep node yarn pyenv-virtualenv shfmt git-lfs xclip xsel exiftool imagemagick
+brew install screen tree rename watch macvim fzf ripgrep node yarn pyenv-virtualenv shfmt awscli xclip xsel exiftool imagemagick
 ```
 
 ## MacVim > Settings...
@@ -319,7 +319,7 @@ ln -s /Applications/Julia-1.9.app/Contents/Resources/julia/bin/julia /usr/local/
 ```julia
 using Pkg: add
 
-for pa in ("AbbreviatedStackTraces", "BenchmarkTools", "JuliaFormatter", "Revise")
+for pa in ("AbbreviatedStackTraces", "Aqua", "BenchmarkTools", "JuliaFormatter", "Logging", "Revise")
 
     add(pa)
 
