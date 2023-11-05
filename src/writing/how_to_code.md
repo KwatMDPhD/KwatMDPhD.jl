@@ -85,7 +85,7 @@ Name with first two characters, differentiate with one character, and pluralize 
 
 Avoid collisions and be consistent
 
-"information": (can not use `in` and `if` because they collide with reserved variables) `io`, (be consistent) `fe_x_io_x_an`, and `ke_io`.
+"information": (can not use `in`, `if`, or `io` because they collide with reserved variables) `ir`, (be consistent) `fe_x_ir_x_an`, and `ke_ir`.
 
 ###### Global Variable
 
