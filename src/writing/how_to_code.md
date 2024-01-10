@@ -9,13 +9,6 @@ tag:
   - Bioinformatics
 ---
 
-## Master Programming
-
-1. Build something simple with it.
-2. Add some features to this thing slowly, one-by-one, taking time.
-3. Relearn this programming skill from scratch in depth from documentations, articles, and tutorials.
-4. Refactor, extend, and grow this thing further more.
-
 Initially, stay broad and make things work.
 Later, get deeper and spend as much time as needed for a complete understanding.
 Aim for perfection, but _ship as often as possible_ because shipping is the **best** and may be the **only** way to grow.
@@ -28,7 +21,7 @@ Be consistent.
 
 Add things when you actually need them.
 
-Trim and refactor periodically.
+Trim and refactor periodically - only to increase the development speed.
 
 ## Do
 
@@ -39,25 +32,21 @@ Count from one (1, 2, ...).
 
 Use `<` and `<=` instead of `>` and `>=`.
 
-Print pretty using emoji.
-
 ## Name
-
-Use semantic versioning.
 
 Avoid name collisions only in the same scope.
 
 Document code with variable and function names (instead of comments).
 
-Prefix names that are not meant to be exposed with `_`.
+Prefix names that are not meant to be exposed or used with `_`.
 
 #### Use Module
 
-Put at top of file.
-
-Only get what you use.
+Put at top of file
 
 Public packages first, then private.
+
+Only get what you use.
 
 ```
 using Satistics: mean
@@ -67,25 +56,17 @@ using BioLab
 
 #### Variable
 
-Define close to use.
+A file is a story, and its variables are characters; order them like so.
 
-Reuse and keep type constant.
+Do not change a variable's type.
 
-Name with first two characters, differentiate with one character, and pluralize by suffixing it with (the number of preceding + 1) `_`
+Name with two characters and pluralize by suffixing it with (the number of preceding + 1) `_`
 
-- Thing: `th` (`th_`), `th1` (`th1_`) vs `th2` (`th2_`), and `tha` (`tha_`) vs `thb` (`thb_`).
+- "Thing": `th` (`th_`), `ti` (`ti_`) `tn` (`tn_`), and `tg` (`tg_`).
 
-- Number of thing: `n` and `n_th` (`n_th__`).
+- "Number of thing": `n_th` (`n_th__`).
 
-- Matrix (feature-by-sample with categorical values): `fe_x_sa_x_ca` (`fe_x_sa_x_ca_____`).
-
-- Dictionary (key => value): `ke_va` (`ke_va__`).
-
-- Dictionary (key => values): `ke_va_` (`ke_va____`).
-
-Avoid collisions and be consistent
-
-"information": (can not use `in`, `if`, or `io` because they collide with reserved variables) `ir`, (be consistent) `fe_x_ir_x_an`, and `ke_ir`.
+"Information": `ir` (can not use `in`, `if`, and `io` because they collide with reserved variables).
 
 ###### Global Variable
 
@@ -93,81 +74,43 @@ Set with `const` and uppercase
 
 `const YE = 2023`.
 
-Do not use in functions or loops.
+Avoid them in functions or loops.
 
 #### Function
 
-###### Hierarchy
+Write small, pure functions - do one thing and return ~one thing.
 
-1. Raw julia
+Minimize depth `f1(f2(f3))`.
 
-2. Module function (overfitted)
-
-3. Project function (overfitted)
-
-4. BioLab function (general)
-
-Should be used more than once.
-
-Should either error check, compute, or plot / summarize (only one of these).
-
-Must be pure (predictable outputs and no side effects).
-
-Work on individual items (can be applied with dot syntax to array).
-
-Avoid layering (f1 calls f2 calls f3).
+Omit `return`.
 
 Avoid passing dictionaries as arguments (array or matrix is better).
 
-Use `return` to stop.
-
 Name explicitly:
 
-`get_signal_to_noise_ratio(nu1_, nu2_)`.
-
-`list_person(pe_)`.
-
-Tell a story with arguments
-
-`function order(io, on, up, a, ti)`.
+`get_signal_to_noise_ratio(n1_, n2_)`.
 
 #### Path
 
-Made by top level functions only.
+Make at the top level.
 
 Use `mkdir` instead of `mkpath`.
 
 #### String
 
-Compute outside string.
-
 Add period when idea is complete.
-
-Add period after an object
-
-@info "$X."
 
 #### Error
 
-Don't error check in project function.
-
-Error check in BioLab function where input data changes.
-
-Use `error` to error.
-
-#### Plot
-
-Title should be the same as the filename.
+Check error close to the source or the top level.
 
 #### File
 
-Use `Dataframe` for reading and writing, `Matrix` for work.
+Name a table
 
-Name files like variables but using more than two characters
+- `feature_x_sample_x_number.tsv`.
 
-- `fe_x_sa_x_nu`: `feature_x_sample_x_number.tsv`.
-
-When modifying a file, extend the existing name
+Extend an existing name
 
 - `DefaultName.tsv`: `DefaultName.log.tsv`.
 
