@@ -124,7 +124,7 @@ function recursively-chmod() {
 
 function recursively-sed() {
 
-	rg --files-with-matches $1 | xargs sed -i "" "s/$1/$2/g"
+	rg --no-ignore --files-with-matches $1 | xargs sed -i "" "s/$1/$2/g"
 
 }
 
@@ -136,7 +136,7 @@ function recursively-clean-jl() {
 
 function recursively-clean-web() {
 
-	find -E . -type f -size -1M -regex ".*\.(json|md|html|css|scss|js|jsx|ts|tsx|svelte)" -print0 | xargs -0 prettier --write
+	find -E . -type f -size -1M -regex ".*\.(json|yaml|md|html|css|scss|js|jsx|ts|tsx)" -print0 | xargs -0 prettier --write
 
 }
 
@@ -229,3 +229,16 @@ PROMPT="%B%~%b "
 RPROMPT=" %B%*%b"
 
 screen -list
+
+# =============================================================================================== #
+# Other
+# ----------------------------------------------------------------------------------------------- #
+
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+path=('/Users/kwat/.juliaup/bin' $path)
+export PATH
+
+# <<< juliaup initialize <<<

@@ -4,8 +4,6 @@ if isinteractive()
 
         using Revise
 
-        #@info "Using Revise"
-
     catch
 
     end
@@ -14,8 +12,6 @@ if isinteractive()
 
         using BenchmarkTools
 
-        #@info "Using BenchmarkTools"
-
     catch
 
     end
@@ -23,8 +19,6 @@ if isinteractive()
     try
 
         using Logging
-
-        #@info "Using Logging"
 
     catch
 

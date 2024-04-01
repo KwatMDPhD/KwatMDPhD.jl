@@ -219,7 +219,7 @@
 	<key>name</key>
 	<string>Adventure Time</string>
 	<key>rowCount</key>
-	<integer>59</integer>
+	<integer>107</integer>
 	<key>shellExitAction</key>
 	<integer>1</integer>
 	<key>type</key>

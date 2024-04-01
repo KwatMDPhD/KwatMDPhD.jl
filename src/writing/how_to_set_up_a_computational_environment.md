@@ -283,38 +283,30 @@ Resizing window: > Smoothly resizes window > 👍
 ## Set `git`
 
 ```bash
-git config --global user.name "" &&
+git config --global user.name "KwatMDPhD" &&
 
 git config --global user.email "" &&
 
 git config --global credential.helper osxkeychain &&
 
-# git config --global pull.rebase true &&
+git config --global fetch.prune true &&
 
-# git config --global fetch.prune true &&
+git config --global pull.rebase true &&
 
-# git config --global diff.colorMoved zebra &&
+git config --global core.ignorecase false &&
 
-# git config --global status.submoduleSummary true &&
+git config --global status.submoduleSummary true &&
 
-# git config --global init.defaultBranch main &&
+git config --global diff.submodule log &&
 
-# git config --global diff.submodule log &&
+git config --global diff.colorMoved zebra &&
 
-git config --global core.ignorecase false# &&
-
-# git lfs install
+git config --global --list
 ```
 
 ## Install and set `julia`
 
 https://julialang.org/downloads
-
-```bash
-mkdir /usr/local/bin &&
-
-ln -s /Applications/Julia-1.9.app/Contents/Resources/julia/bin/julia /usr/local/bin/julia
-```
 
 ```julia
 using Pkg: add

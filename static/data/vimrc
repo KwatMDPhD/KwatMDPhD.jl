@@ -42,7 +42,7 @@ set lazyredraw
 
 set wildmenu
 
-set guifont=Menlo-Regular:h13
+set guifont=Menlo-Regular:h14
 
 set guicursor+=a:blinkon0
 
@@ -184,7 +184,7 @@ let NERDTreeSortOrder = []
 
 let NERDTreeStatusline = -1
 
-let NERDTreeWinSize = 60
+let NERDTreeWinSize = 64
 
 let NERDTreeMinimalUI = 1
 
