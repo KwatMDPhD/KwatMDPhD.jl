@@ -285,15 +285,13 @@ Resizing window: > Smoothly resizes window > 👍
 ```bash
 git config --global user.name "KwatMDPhD" &&
 
-git config --global user.email "" &&
+git config --global user.email "kwat.me@icloud.com" &&
 
 git config --global credential.helper osxkeychain &&
 
 git config --global fetch.prune true &&
 
 git config --global pull.rebase true &&
-
-git config --global core.ignorecase false &&
 
 git config --global status.submoduleSummary true &&
 
