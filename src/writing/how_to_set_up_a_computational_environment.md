@@ -309,7 +309,7 @@ https://julialang.org/downloads
 ```julia
 using Pkg: add
 
-for pa in ("AbbreviatedStackTraces", "Aqua", "BenchmarkTools", "JuliaFormatter", "Logging", "Revise")
+for pa in ("BenchmarkTools", "JuliaFormatter", "Revise")
 
     add(pa)
 
