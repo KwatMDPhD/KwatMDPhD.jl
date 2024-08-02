@@ -1,26 +1,6 @@
 # =============================================================================================== #
-# Color
-# ----------------------------------------------------------------------------------------------- #
-
-FONT_DEFAULT="$(tput sgr0)"
-
-FONT_BOLD="$(tput bold)"
-
-FONT_EMERALD="\033[38;5;43m"
-
-FONT_PURPLE="\033[38;5;93m"
-
-FONT_BLUE="\033[38;5;4m"
-
-# =============================================================================================== #
 # Alias
 # ----------------------------------------------------------------------------------------------- #
-
-alias ..="cd .."
-
-alias ...="cd ../.."
-
-alias ....="cd ../../.."
 
 alias ls="ls -hG"
 
@@ -40,15 +20,21 @@ alias grep="grep --color"
 
 alias mkdir="mkdir -pv"
 
-alias cp="cp -i"
+alias rm="rm -i"
 
 alias mv="mv -i"
 
+alias cp="cp -i"
+
 alias rsync="rsync --archive --verbose --itemize-changes --human-readable --progress --stats"
 
-alias rm="rm -i"
+alias find="find -E"
 
 alias ju="julia --project"
+
+alias ..="cd .."
+
+alias ...="cd ../.."
 
 # =============================================================================================== #
 # Function
@@ -92,39 +78,9 @@ function extract() {
 
 }
 
-function clean-name() {
+function recursively-clean-web() {
 
-	rename --sanitize --lower-case --expr "s/-/_/g" --force $1
-
-}
-
-function recursively-rm() {
-
-	pa_=(".DS_Store" ".localized" ".com.apple.*" ".~*" "*.swp" "__pycache__" "*.pyc" ".ipynb_checkpoints") &&
-
-	for pa in $pa_
-
-	do
-
-		find . -iname "$pa" -prune -print0 | xargs -0 rm -rf
-
-	done
-
-}
-
-function recursively-chmod() {
-
-    ig="-not -path \"*/.git/*\" -not -path \"*/node_modules/*\" -not -path \"*/.svelte-kit/*\""
-
-    find . -type f $(echo $ig) -print0 | xargs -0 chmod 644 &&
-
-	find . -type d $(echo $ig) -print0 | xargs -0 chmod 755
-
-}
-
-function recursively-sed() {
-
-	rg --no-ignore --files-with-matches $1 | xargs sed -i "" "s/$1/$2/g"
+	find . -type f -size -1M -regex ".*\.(json|yaml|md|html|css|scss|js|jsx|ts|tsx)" -print0 | xargs -0 prettier --write
 
 }
 
@@ -134,15 +90,17 @@ function recursively-clean-jl() {
 
 }
 
-function recursively-clean-web() {
+FONT_DEFAULT="$(tput sgr0)"
 
-	find -E . -type f -size -1M -regex ".*\.(json|yaml|md|html|css|scss|js|jsx|ts|tsx)" -print0 | xargs -0 prettier --write
+FONT_BOLD="$(tput bold)"
 
-}
+FONT_EMERALD="\033[38;5;43m"
+
+FONT_PURPLE="\033[38;5;93m"
 
 function recursively-kata() {
 
-	for pa in $(find -E . -type d -regex ".*\.(jl|pro)")
+	for pa in $(find . -type d -regex ".*\.jl")
 
 	do
 
@@ -152,8 +110,6 @@ function recursively-kata() {
 
 		kata format &&
 
-		kata call $1 &&
-
 		popd
 
 	done
@@ -162,7 +118,7 @@ function recursively-kata() {
 
 function recursively-git-fetch-status-diff() {
 
-	for pa in $(find -E . -type d -regex ".*\.git")
+	for pa in $(find . -type d -regex ".*\.git")
 
 	do
 
@@ -184,21 +140,21 @@ function recursively-git-fetch-status-diff() {
 
 function recursively-git-add-commit-push() {
 
-	for pa in $(find -E . -type d -regex ".*\.git")
+	for pa in $(find . -type d -regex ".*\.git")
 
 	do
 
-		pushd $pa/../
+		pushd $pa/../ &&
 
-		printf "$FONT_BOLD$FONT_EMERALD$(pwd)$FONT_DEFAULT\n"
+		printf "$FONT_BOLD$FONT_EMERALD$(pwd)$FONT_DEFAULT\n" &&
 
-		git add -A
+		git add -A &&
 
-		git commit -m "$1"
+		git commit -m "$1" &&
 
-        git pull
+        git pull &&
 
-		git push
+		git push &&
 
 		popd
 
@@ -208,15 +164,13 @@ function recursively-git-add-commit-push() {
 
 function recursively-housekeep() {
 
-	recursively-rm &&
+	recursively-clean-web &&
 
 	recursively-clean-jl &&
 
-	recursively-clean-web &&
+	recursively-kata &&
 
-	recursively-kata "$1" &&
-
-	recursively-git-add-commit-push "$2"
+	recursively-git-add-commit-push "$1"
 
 }
 
@@ -228,11 +182,13 @@ PROMPT="%B%~%b "
 
 RPROMPT=" %B%*%b"
 
-screen -list
-
 # =============================================================================================== #
-# Other
+# Environment
 # ----------------------------------------------------------------------------------------------- #
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+PATH=~/.julia/bin:$PATH
 
 # >>> juliaup initialize >>>
 
