@@ -1,51 +1,37 @@
-My website 📍
+🤠
 
-## Description
+```bash
+touch static/.nojekyll
+```
 
-Bioinformatician 🧬🧑‍💻
-MD-PhD candidate at Stanford 🩺🌲
-Hacking immunology at Mark Davis Lab 🥼🦠
-Entrepreneur 🔄📈
+```bash
+npm install --save-dev gh-pages
+```
 
-## Podcast
+```bash
+gh-pages --dist build
+```
 
-### Podcast Description
+![](media/preferences.png)
 
-The intersection between medicine and science (especially immunology!) is fascinating 🩺🧬🤩
-In this podcast, Kwat Medetgul-Ernar (an MD-PhD candidate at Stanford) explains biomedical science with a splash of humor 🥼🤣
-This show is for scientists and non-scientists alike; if you want to increase your biomedical knowledge, this show is for you 📚📈🌲
+https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
 
-Connect with me at https://KwatMDPhD.com 📍
+![](media/dns.png)
 
-### Episode Description
+![](media/custom_domain.png)
 
-THANK YOU for listening 🩵
-Please hit SUBSCRIBE 💖
+```bash
+echo "KwatMDPhD.com" > public/CNAME
+```
 
-Connect with me at https://KwatMDPhD.com 📍
+https://analytics.google.com
 
-### Tag
+Make a property
 
-Medicine,Health,Disease,Physiology,Microbiology,Immunology,Biology,Bioinformatics,Genomics,Science,USMLE
+Insert `Global site tag` into `<head>`
 
-## YouTube
+![](media/google_analytics.png)
 
-### Channel Description
+---
 
-The intersection between medicine and science (especially immunology!) is fascinating 🩺🧬🤩
-In this channel, Kwat Medetgul-Ernar (an MD-PhD candidate at Stanford) explains biomedical science with a splash of humor 🥼🤣
-If you want to increase your biomedical knowledge, this show is for you 📚📈🌲
-
-Connect with me at https://KwatMDPhD.com 📍
-
-### Video Description
-
-THANK YOU for watching 🩵
-Please hit SUBSCRIBE 💖
-And let me know what you think in the COMMENTS 💌
-
-Connect with me at https://KwatMDPhD.com 📍
-
-### Tag
-
-Medicine,Health,Disease,Physiology,Microbiology,Immunology,Biology,Bioinformatics,Genomics,Science,DNA,RNA,Protein,Cell,Pathogen,MD,PhD,USMLE,STEP1
+Made by https://github.com/KwatMDPhD/Kata.jl 🔴
