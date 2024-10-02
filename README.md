@@ -1,7 +1,5 @@
 🔥
 
-## Guide
-
 Less is more.
 
 Every adversity, carries with it, the seed of equivalent advantage.
