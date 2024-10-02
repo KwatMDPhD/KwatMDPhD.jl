@@ -18,11 +18,7 @@ https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pag
 
 ![](media/dns.png)
 
-![](media/custom_domain.png)
-
-```bash
-echo "KwatMDPhD.com" > public/CNAME
-```
+![](media/domain.png)
 
 https://analytics.google.com
 
