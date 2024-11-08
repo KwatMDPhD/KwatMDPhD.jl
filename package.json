@@ -4,5 +4,5 @@
   },
   "scripts": {
     "deploy": "gh-pages -d public"
-}
+  }
 }
