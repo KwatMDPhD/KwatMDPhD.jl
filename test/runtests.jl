@@ -26,10 +26,7 @@ Genie.up()
 
 # ---- #
 
-println(DEFAULT_LAYOUT(; footer = "Kwat"))
-
-# ---- #
-
 GenieStatic.make(joinpath(PA, "public"), "http://localhost:8000")
 
 # ---- #
+
