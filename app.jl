@@ -14,6 +14,18 @@ function writing()
 
 end
 
-@page "/" home
+@page "/" home layout = """
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kwat</title>
+  </head>
+  <body>
+    <%
+      @yield
+    %>
+  </body>
+</html>
+"""
 
 @page "/writing" writing
