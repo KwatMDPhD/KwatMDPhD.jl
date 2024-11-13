@@ -18,7 +18,9 @@ end
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
     <title>Kwat</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
   </head>
   <body>
     <%
