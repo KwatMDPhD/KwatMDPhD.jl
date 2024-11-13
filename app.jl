@@ -2,6 +2,8 @@ using GenieFramework
 
 @genietools
 
+using GenieStatic
+
 function view()
 
     (
@@ -39,3 +41,7 @@ function view()
 end
 
 @page "/" view
+
+@page "/writing" view
+
+GenieStatic.build(tempdir())
