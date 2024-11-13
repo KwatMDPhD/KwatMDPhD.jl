@@ -16,14 +16,29 @@ end
 
 function writing()
 
-    xelem(:h1, "Writing ✍️")
+    [xelem(:h1, "Writing ✍️")]
 
 end
 
 @page "/" home layout = join((
-    xelem(:head, [xelem(:title, "KwatMDPhD")]),
-    xelem(:body, [xelem(:h1, "H1"), "<% @yield %>"]),
-    xelem(:footer, ["X"]),
+    xelem(
+        :head,
+        [
+            xelem(:meta; name = "author", content = "Kwat Medetgul-Ernar"),
+            xelem(:title, "Website of Kwat Medetgul-Ernar"),
+            xelem(:meta; name = "description", content = "Website of Kwat Medetgul-Ernar"),
+            xelem(:meta; name = "keywords", content = "Kwat Medetgul-Ernar, Kwat, Medetgul, Ernar, KwatMDPhD"),
+            xelem(:link; rel = "icon", type = "image/x-icon", href = "favicon.png"),
+            # TODO: Link styles.
+            xelem(
+                :meta;
+                name = "viewport",
+                content = "width=device-width, initial-scale=1",
+            ),
+            xelem(:meta; charset = "utf-8"),
+        ],
+    ),
+    xelem(:body, ["<% @yield %>"]),
 ))
 
-@page "/writing" writing layout = layout()
+@page "/writing" writing
