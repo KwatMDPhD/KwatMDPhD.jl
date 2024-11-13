@@ -8,6 +8,8 @@ using GenieFramework
 
 using GenieStatic
 
+@genietools
+
 # ---- #
 
 const PA = pkgdir(KwatMDPhD)
@@ -24,4 +26,10 @@ Genie.up()
 
 # ---- #
 
+println(DEFAULT_LAYOUT(; footer = "Kwat"))
+
+# ---- #
+
 GenieStatic.make(joinpath(PA, "public"), "http://localhost:8000")
+
+# ---- #

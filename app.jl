@@ -2,6 +2,12 @@ using GenieFramework
 
 @genietools
 
+function layout()
+
+    ""
+
+end
+
 function home()
 
     [xelem(:h1, "I'm Kwat 🤠"), xelem(:a, "Writing ✍️"; href = "/writing")]
@@ -14,20 +20,10 @@ function writing()
 
 end
 
-@page "/" home layout = """
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Kwat</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.png">
-  </head>
-  <body>
-    <%
-      @yield
-    %>
-  </body>
-</html>
-"""
+@page "/" home layout = join((
+    xelem(:head, [xelem(:title, "KwatMDPhD")]),
+    xelem(:body, [xelem(:h1, "H1"), "<% @yield %>"]),
+    xelem(:footer, ["X"]),
+))
 
-@page "/writing" writing
+@page "/writing" writing layout = layout()
