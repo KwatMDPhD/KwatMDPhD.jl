@@ -8,8 +8,8 @@ if (window.Vue) {
     `,
 
     model: {
-      prop: "selected_id",
-      event: "input",
+      prop: 'selected_id',
+      event: 'input'
     },
 
     props: {
@@ -21,12 +21,9 @@ if (window.Vue) {
     data() {
       // If selected_id (v.model) is not provided, default to the first tab (or undefined if ids are not provided)
       let result = {};
-      result.localSelectedId =
-        this.selected_id != null
-          ? this.selected_id
-          : this.ids.length > 0
-            ? this.ids[0]
-            : undefined;
+      result.localSelectedId = this.selected_id != null ? 
+          this.selected_id : 
+          this.ids.length > 0 ? this.ids[0] : undefined
       return result;
     },
 
@@ -37,9 +34,9 @@ if (window.Vue) {
       },
       // Watch for changes in the local data property and emit the update to the parent
       localSelectedId(newVal) {
-        this.$emit("input", newVal);
-      },
-    },
+        this.$emit('input', newVal);
+      }
+    }
   });
 } else {
   console.warn("Can't register custom component because Vue is not available");

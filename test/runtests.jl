@@ -6,9 +6,9 @@ using Test: @test
 
 using GenieFramework
 
-using GenieStatic
-
 @genietools
+
+using GenieStatic
 
 # ---- #
 

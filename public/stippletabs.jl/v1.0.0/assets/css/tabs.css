@@ -1,5 +1,7 @@
-.tabsContainer {
+
+.tabsContainer{
+    
 }
-.tabsContainer canvas {
-  width: 100% !important;
+.tabsContainer canvas{
+    width: 100% !important;
 }
