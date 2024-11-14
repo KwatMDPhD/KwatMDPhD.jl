@@ -1,5 +1,6 @@
+
 Vue.component("st-table", {
-  template: `    
+    template: `    
         <q-table 
             v-if="data_table" 
             row-key="__id" 
@@ -22,35 +23,35 @@ Vue.component("st-table", {
         </q-table>
         <div v-else class="componentError"><b>Stipple Table</b>: Please set the 'Data Table'</b>' property ('data_table' attribute)</div>
     `,
-  props: {
-    data_table: {
-      required: true,
+    props: {
+        data_table: {
+            required: true, 
+        },
+        loading: {
+            type: Boolean,
+            default: false
+        },
+        server_side_event: {
+            type: String,
+        },
     },
-    loading: {
-      type: Boolean,
-      default: false,
+    inheritAttrs: false,
+    data() {
+        return {};
     },
-    server_side_event: {
-      type: String,
-    },
-  },
-  inheritAttrs: false,
-  data() {
-    return {};
-  },
-  computed: {},
-  methods: {
-    handleRequest(event) {
-      if (this.$root.handle_event && this.$options.parent == this.$root) {
-        if (this.server_side_event) {
-          this.$root.handle_event(event, this.server_side_event);
-        } else {
-          this.$root.handle_event(event, "request");
-        }
-      }
-    },
-    toggleFullscreen() {
-      this.isFullscreen = !this.isFullscreen;
-    },
-  },
+    computed: {},
+    methods: {
+        handleRequest(event) {
+            if( this.$root.handle_event && this.$options.parent == this.$root ){
+                if( this.server_side_event  ){
+                    this.$root.handle_event(event, this.server_side_event );
+                }else{
+                    this.$root.handle_event(event, "request" );
+                }
+            }
+        },
+        toggleFullscreen() {
+            this.isFullscreen = !this.isFullscreen;
+        },
+    }
 });
