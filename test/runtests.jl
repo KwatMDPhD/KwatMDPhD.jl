@@ -26,4 +26,8 @@ Genie.up()
 
 # ---- #
 
+routes()
+
+# ---- #
+
 GenieStatic.make(joinpath(PA, "public"), "http://localhost:8000")
