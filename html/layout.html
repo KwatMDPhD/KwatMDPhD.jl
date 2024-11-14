@@ -23,20 +23,19 @@
   </head>
 
   <body>
-    <div class="w-full flex h-svh max-h-svh">
-      <div class="h-full flex-1">
-        <div class="flex h-full flex-col justify-between overflow-y-scroll">
-          <div class="top-0 w-full flex bg-orange-200 py-4">
-            <p class="text-center text-xl">Home</p>
-            <p class="text-center text-xl">Writing</p>
-          </div>
+    <div class="">
+      <div class="bg-red-200">
+        <p class="">Home</p>
 
-          <div class="flex items-center justify-center"><% @yield %></div>
+        <p class="">Writing</p>
+      </div>
 
-          <div class="w-full bg-orange-200 py-8">
-            <p class="text-center text-xl">KwatMDPhD.com</p>
-          </div>
-        </div>
+      <div class="">
+        <% @yield %>
+      </div>
+
+      <div class="bg-red-200">
+        <p class="">KwatMDPhD.com</p>
       </div>
     </div>
   </body>
