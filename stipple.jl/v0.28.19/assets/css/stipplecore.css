@@ -1,17 +1,17 @@
 :root.stipple-core {
   /* --------- Quasar Colors ---------- */
-  --q-color-primary: var( --st-color-primary );
-  --q-color-secondary: var( --st-color-secondary );
-  --q-color-black: var( --st-color-black );
-  --q-color-white: var( --st-color-white );
-  --q-color-dark: var( --st-color-dark );
-  --q-color-accent: var( --st-color-accent );
-  --q-color-info: var( --st-color-info );
-  --q-color-negative: var( --st-color-negative );
-  --q-color-neutral: var( --st-color-neutral );
-  --q-color-neutral-alt: var( --st-color-neutral-alt );
-  --q-color-positive: var( --st-color-positive );
-  --q-color-warning: var( --st-color-warning );  
+  --q-color-primary: var(--st-color-primary);
+  --q-color-secondary: var(--st-color-secondary);
+  --q-color-black: var(--st-color-black);
+  --q-color-white: var(--st-color-white);
+  --q-color-dark: var(--st-color-dark);
+  --q-color-accent: var(--st-color-accent);
+  --q-color-info: var(--st-color-info);
+  --q-color-negative: var(--st-color-negative);
+  --q-color-neutral: var(--st-color-neutral);
+  --q-color-neutral-alt: var(--st-color-neutral-alt);
+  --q-color-positive: var(--st-color-positive);
+  --q-color-warning: var(--st-color-warning);
 
   --q-primary: var(--st-color-primary);
   --q-secondary: var(--st-color-secondary);
@@ -26,42 +26,42 @@
   --q-dark-page: var(--st-color-dark-page);
 }
 
-:root.stipple-core{
+:root.stipple-core {
   /* ------- Backgrounds ---------- */
-  --st-dashboard-bg:        var(--st-dashboard-bg-0);
-  --st-dashboard-module:    var(--st-dashboard-bg);
-  --st-dashboard-line:      var(--st-color-neutral);
-  --st-slider--track:       var(--st-color-neutral);
-  --st-skeleton:            var(--st-color-neutral);
+  --st-dashboard-bg: var(--st-dashboard-bg-0);
+  --st-dashboard-module: var(--st-dashboard-bg);
+  --st-dashboard-line: var(--st-color-neutral);
+  --st-slider--track: var(--st-color-neutral);
+  --st-skeleton: var(--st-color-neutral);
 
   /* ----- Shadows ---------- */
-  --st-shadow-none:         none;
-  --st-shadow-sm:           1px   1px   2px   0px   var( --st-shadow-color );
-  --st-shadow-md:           1px   2px   2px   0px   var( --st-shadow-color );
-  --st-shadow-lg:           0px   4px   10px  0px   var( --st-shadow-color );
-  --st-shadow-xl:           0px   4px   20px  0px   var( --st-shadow-color );
-  
+  --st-shadow-none: none;
+  --st-shadow-sm: 1px 1px 2px 0px var(--st-shadow-color);
+  --st-shadow-md: 1px 2px 2px 0px var(--st-shadow-color);
+  --st-shadow-lg: 0px 4px 10px 0px var(--st-shadow-color);
+  --st-shadow-xl: 0px 4px 20px 0px var(--st-shadow-color);
+
   /* ---------- Font Weights ---------- */
   --st-font-weight-regular: 400;
-  --st-font-weight-medium:  500;
-  --st-font-weight-bold:    700;
-  --st-font-weight-black:   800;
+  --st-font-weight-medium: 500;
+  --st-font-weight-bold: 700;
+  --st-font-weight-black: 800;
 
   /* ---------- Border Radius ---------- */
-  --st-border-radius-none:  0px;
-  --st-border-radius-xs:    3px;
-  --st-border-radius-sm:    5px;
-  --st-border-radius-md:    8px;
-  --st-border-radius-lg:    12px;
-  --st-border-radius-xl:    20px;
+  --st-border-radius-none: 0px;
+  --st-border-radius-xs: 3px;
+  --st-border-radius-sm: 5px;
+  --st-border-radius-md: 8px;
+  --st-border-radius-lg: 12px;
+  --st-border-radius-xl: 20px;
 
   /* ---------- Spacing Sizes ---------- */
-  --st-spacing-none:        0px;
-  --st-spacing-xs:          2px;
-  --st-spacing-sm:          4px;
-  --st-spacing-md:          8px;
-  --st-spacing-lg:          16px;
-  --st-spacing-xl:          32px;
+  --st-spacing-none: 0px;
+  --st-spacing-xs: 2px;
+  --st-spacing-sm: 4px;
+  --st-spacing-md: 8px;
+  --st-spacing-lg: 16px;
+  --st-spacing-xl: 32px;
 
   /* ----- Component Heights ---------- */
   --st-component-height-sm: 25px;
@@ -69,46 +69,95 @@
   --st-component-height-lg: 35px;
   --st-component-height-xl: 40px;
 
-
   /* ---------- Paddings ---------- */
-  .st-pad-xs, .row.row-pad-xs > * {  padding: var(--st-spacing-xs);  }
-  .st-pad-sm, .row.row-pad-sm > * {  padding: var(--st-spacing-sm);  }
-  .st-pad-md, .row.row-pad-md > * {  padding: var(--st-spacing-md);  }
-  .st-pad-lg, .row.row-pad-lg > * {  padding: var(--st-spacing-lg);  }
-  .st-pad-xl, .row.row-pad-xl > * {  padding: var(--st-spacing-xl);  }
-  .st-pad,    .row.row-pad    > * {  padding: var(--st-spacing-md);  }
+  .st-pad-xs,
+  .row.row-pad-xs > * {
+    padding: var(--st-spacing-xs);
+  }
+  .st-pad-sm,
+  .row.row-pad-sm > * {
+    padding: var(--st-spacing-sm);
+  }
+  .st-pad-md,
+  .row.row-pad-md > * {
+    padding: var(--st-spacing-md);
+  }
+  .st-pad-lg,
+  .row.row-pad-lg > * {
+    padding: var(--st-spacing-lg);
+  }
+  .st-pad-xl,
+  .row.row-pad-xl > * {
+    padding: var(--st-spacing-xl);
+  }
+  .st-pad,
+  .row.row-pad > * {
+    padding: var(--st-spacing-md);
+  }
 
   /* ---------- Margins ---------- */
-  .st-margin-xs, .row-margin-xs > * {  margin: var(--st-spacing-xs);  }
-  .st-margin-sm, .row-margin-sm > * {  margin: var(--st-spacing-sm);  }
-  .st-margin-md, .row-margin-md > * {  margin: var(--st-spacing-md);  }
-  .st-margin-lg, .row-margin-lg > * {  margin: var(--st-spacing-lg);  }
-  .st-margin-xl, .row-margin-xl > * {  margin: var(--st-spacing-xl);  }
+  .st-margin-xs,
+  .row-margin-xs > * {
+    margin: var(--st-spacing-xs);
+  }
+  .st-margin-sm,
+  .row-margin-sm > * {
+    margin: var(--st-spacing-sm);
+  }
+  .st-margin-md,
+  .row-margin-md > * {
+    margin: var(--st-spacing-md);
+  }
+  .st-margin-lg,
+  .row-margin-lg > * {
+    margin: var(--st-spacing-lg);
+  }
+  .st-margin-xl,
+  .row-margin-xl > * {
+    margin: var(--st-spacing-xl);
+  }
 
   /* ---------- Gap ---------- */
-  .st-gap-xs {  gap: var(--st-spacing-xs);  }
-  .st-gap-sm {  gap: var(--st-spacing-sm);  }
-  .st-gap-md {  gap: var(--st-spacing-md);  }
-  .st-gap-lg {  gap: var(--st-spacing-lg);  }
-  .st-gap-xl {  gap: var(--st-spacing-xl);  }
+  .st-gap-xs {
+    gap: var(--st-spacing-xs);
+  }
+  .st-gap-sm {
+    gap: var(--st-spacing-sm);
+  }
+  .st-gap-md {
+    gap: var(--st-spacing-md);
+  }
+  .st-gap-lg {
+    gap: var(--st-spacing-lg);
+  }
+  .st-gap-xl {
+    gap: var(--st-spacing-xl);
+  }
 
-  .st-flex-row {  display: flex; flex-direction: row; }
-  .st-flex-col {  display: flex; flex-direction: column; }
-
-
+  .st-flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .st-flex-col {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-  /*===================================================================
+/*===================================================================
                         STIPPLE ELEMENTS
   ================================================================== */
 
-.stipple-core, .stipple-core body {
+.stipple-core,
+.stipple-core body {
   font-weight: 400;
-  font-family:            var(--st-font-family);
-  font-size:              var(--st-font-size);
-  color:                  var(--st-text-2);
-  background-color:       var(--st-dashboard-bg);
-  transition:             color 0.3s, background-color 0.3s;
+  font-family: var(--st-font-family);
+  font-size: var(--st-font-size);
+  color: var(--st-text-2);
+  background-color: var(--st-dashboard-bg);
+  transition:
+    color 0.3s,
+    background-color 0.3s;
 }
 
 .stipple-core .q-field__control-container .material-icons {
@@ -116,12 +165,12 @@
   margin-bottom: auto;
 }
 
-.stipple-core header{
+.stipple-core header {
   padding: 15px 10px 10px 10px;
   width: 100%;
 }
 
-.stipple-core ._genie_logo{
+.stipple-core ._genie_logo {
   margin-left: 5px;
 }
 
@@ -134,30 +183,31 @@
   flex-direction: column;
 }
 
-.container { 
-  margin-bottom: 20px; 
+.container {
+  margin-bottom: 20px;
 }
 
-.st-col { 
-  box-sizing: border-box !important; 
+.st-col {
+  box-sizing: border-box !important;
 }
 
 /*===================================================================
                         GENERAL TEXTS
   ================================================================== */
 
-  /* Bolds */
-.stipple-core .text-bold, .stipple-core b, .stipple-core strong {
+/* Bolds */
+.stipple-core .text-bold,
+.stipple-core b,
+.stipple-core strong {
   font-weight: var(--st-font-weight-bold);
 }
 
-  /* Italics */
-.stipple-core em:not(.material-icons), .stipple-core i:not(.material-icons) {
+/* Italics */
+.stipple-core em:not(.material-icons),
+.stipple-core i:not(.material-icons) {
   font-style: italic;
 }
 
-
-
-
-
-[v-cloak] { display: none; }
+[v-cloak] {
+  display: none;
+}
