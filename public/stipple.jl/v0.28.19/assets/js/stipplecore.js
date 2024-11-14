@@ -11,20 +11,27 @@
       n.o(e, t) || Object.defineProperty(e, t, { enumerable: !0, get: r });
     }),
     (n.r = function (e) {
-      "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 });
+      "undefined" != typeof Symbol &&
+        Symbol.toStringTag &&
+        Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
+        Object.defineProperty(e, "__esModule", { value: !0 });
     }),
     (n.t = function (e, t) {
       if ((1 & t && (e = n(e)), 8 & t)) return e;
       if (4 & t && "object" == typeof e && e && e.__esModule) return e;
       var r = Object.create(null);
-      if ((n.r(r), Object.defineProperty(r, "default", { enumerable: !0, value: e }), 2 & t && "string" != typeof e))
+      if (
+        (n.r(r),
+        Object.defineProperty(r, "default", { enumerable: !0, value: e }),
+        2 & t && "string" != typeof e)
+      )
         for (var o in e)
           n.d(
             r,
             o,
             function (t) {
               return e[t];
-            }.bind(null, o)
+            }.bind(null, o),
           );
       return r;
     }),
@@ -53,7 +60,12 @@
     n(0), n(1);
     var r = function () {
       var e = this.$createElement;
-      return (this._self._c || e)("section", { staticClass: "st-dashboard" }, [this._t("default")], 2);
+      return (this._self._c || e)(
+        "section",
+        { staticClass: "st-dashboard" },
+        [this._t("default")],
+        2,
+      );
     };
     r._withStripped = !0;
     var o = function () {
@@ -62,15 +74,38 @@
         n = e._self._c || t;
       return n(
         "div",
-        { staticClass: "st-big-number", class: e.color ? "st-big-number--" + e.color : "" },
+        {
+          staticClass: "st-big-number",
+          class: e.color ? "st-big-number--" + e.color : "",
+        },
         [
           e.title ? n("q-badge", [e._v(e._s(e.title))]) : e._e(),
           e._v(" "),
-          e.icon ? n("q-icon", { staticClass: "st-big-number__icon", class: e.color ? "bg-" + e.color : "", attrs: { name: e.icon } }) : e._e(),
+          e.icon
+            ? n("q-icon", {
+                staticClass: "st-big-number__icon",
+                class: e.color ? "bg-" + e.color : "",
+                attrs: { name: e.icon },
+              })
+            : e._e(),
           e._v(" "),
-          n("span", { staticClass: "st-big-number__num" }, [e.arrow ? n("q-icon", { attrs: { name: "arrow_drop_" + e.arrow } }) : e._e(), e._v("\n        " + e._s(e.random ? e.randomize() : e.number ? e.number : 0) + "\n      ")], 1),
+          n(
+            "span",
+            { staticClass: "st-big-number__num" },
+            [
+              e.arrow
+                ? n("q-icon", { attrs: { name: "arrow_drop_" + e.arrow } })
+                : e._e(),
+              e._v(
+                "\n        " +
+                  e._s(e.random ? e.randomize() : e.number ? e.number : 0) +
+                  "\n      ",
+              ),
+            ],
+            1,
+          ),
         ],
-        1
+        1,
       );
     };
     function i(e, t, n, r, o, i, s, a) {
@@ -82,7 +117,14 @@
         i && (c._scopeId = "data-v-" + i),
         s
           ? ((u = function (e) {
-              (e = e || (this.$vnode && this.$vnode.ssrContext) || (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext)) || "undefined" == typeof __VUE_SSR_CONTEXT__ || (e = __VUE_SSR_CONTEXT__),
+              (e =
+                e ||
+                (this.$vnode && this.$vnode.ssrContext) ||
+                (this.parent &&
+                  this.parent.$vnode &&
+                  this.parent.$vnode.ssrContext)) ||
+                "undefined" == typeof __VUE_SSR_CONTEXT__ ||
+                (e = __VUE_SSR_CONTEXT__),
                 o && o.call(this, e),
                 e && e._registeredComponents && e._registeredComponents.add(s);
             }),
@@ -90,7 +132,11 @@
           : o &&
             (u = a
               ? function () {
-                  o.call(this, (c.functional ? this.parent : this).$root.$options.shadowRoot);
+                  o.call(
+                    this,
+                    (c.functional ? this.parent : this).$root.$options
+                      .shadowRoot,
+                  );
                 }
               : o),
         u)
@@ -126,10 +172,18 @@
       !1,
       null,
       "4d31d652",
-      null
+      null,
     );
     var a = s.exports,
-      u = i({ name: "Dashboard", components: { StBigNumber: a } }, r, [], !1, null, "4d047983", null);
+      u = i(
+        { name: "Dashboard", components: { StBigNumber: a } },
+        r,
+        [],
+        !1,
+        null,
+        "4d047983",
+        null,
+      );
     var c = u.exports;
     window.Stipple = {
       init: function (e) {
@@ -138,7 +192,10 @@
         e = Object.assign({}, e);
         Vue.component("StDashboard", c);
         Vue.component("StBigNumber", a);
-        (t = document.querySelector("html").classList).add.apply(t, ["stipple-core", e.theme ? e.theme : "stipple-blue"]);
+        (t = document.querySelector("html").classList).add.apply(t, [
+          "stipple-core",
+          e.theme ? e.theme : "stipple-blue",
+        ]);
       },
     };
   },
