@@ -13,8 +13,6 @@
       content="Kwat Medetgul-Ernar, Kwat, Medetgul, Ernar, KwatMDPhD, Bioinformatics, Causality, Medicine, Immunology, Cancer"
     />
 
-    <link type="image/x-icon" rel="icon" href="favicon.png" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <meta charset="utf-8" />
@@ -23,23 +21,21 @@
   </head>
 
   <body>
-    <div class="flex h-dvh flex-col selection:bg-rose-200">
-      <header class="bg-rose-800 py-8">
-        <nav>
-          <ul class="flex justify-center gap-8">
-            <li><a href="/" class="text-white">Home 🤠</a></li>
-
-            <li><a href="/writing" class="text-white">Writing 📓</a></li>
-          </ul>
-        </nav>
+    <div class="flex min-h-svh flex-col gap-16">
+      <header
+        class="flex place-content-center bg-rose-600 py-8 text-xl font-bold tracking-wide text-white"
+      >
+        Kwat Medetgul-Ernar
       </header>
 
-      <main class="flex grow justify-center bg-rose-100 py-8">
-        <div><% @yield %></div>
+      <main class="flex flex-1 place-content-center">
+        <div class="max-w-prose"><% @yield %></div>
       </main>
 
-      <footer class="flex justify-center bg-rose-800 py-8">
-        <a class="text-white" href="/">KwatMDPhD.com</a>
+      <footer
+        class="flex place-content-center bg-rose-600 py-8 font-bold text-white"
+      >
+        Less is More.
       </footer>
     </div>
   </body>
