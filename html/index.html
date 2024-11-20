@@ -1,16 +1,24 @@
-<div class="max-w-prose">
-  <h1 class="pb-4 text-4xl font-bold">Hi, I'm Kwat 🤠</h1>
+<div class="flex max-w-prose flex-col gap-2">
+  <div class="flex flex-col items-center gap-2 pb-8">
+    <h1 class="text-4xl font-bold">Hi, I'm Kwat 👋🥼</h1>
+
+    <img
+      class="float-right size-80 object-scale-down"
+      src="profile.jpg"
+      alt="Kwat’s profile picture showing him coding and drawing his blood."
+    />
+
+    <p class="text-lg">
+      I'm a sixth-year MD-PhD candidate at <% link("the Stanford School of
+      Medicine", "https://med.stanford.edu/mstp.html") %>.
+    </p>
+  </div>
+
+  <h2 class="text-2xl font-semibold">
+    My life's task is to build the everything blood test 🩸🔮
+  </h2>
 
   <p>
-    I'm a sixth-year MD-PhD candidate at <% link("the Stanford School of
-    Medicine", "https://med.stanford.edu/mstp.html") %>.
-  </p>
-
-  <br />
-
-  <% h2("My life's task is to build the everything blood test 🩸🔮") %>
-
-  <p class="pb-2">
     I’m building a blood test in <% link("the Stanford Mark Davis Lab",
     "https://med.stanford.edu/davislab.html") %>. I’ve been coding analytics
     that use a causality model to analyze various cells and molecules. The data
@@ -29,9 +37,9 @@
     possible gain useful information from their blood.
   </p>
 
-  <br />
-
-  <% h2("I've built software, hardware, businesses, and more 🧑‍🔧📈") %>
+  <h2 class="text-2xl font-semibold">
+    I've built software, hardware, businesses, and more 🧑‍🔧📈
+  </h2>
 
   <ul>
     <li>
@@ -65,9 +73,7 @@
     <li><% link("My Trillions", "https://MyTrillions.com") %></li>
   </ul>
 
-  <br />
-
-  <% h2("Links 🚀🌏") %>
+  <h2 class="text-2xl font-semibold">Links 🚀🌏</h2>
 
   <ul>
     <li><% link("GitHub", "https://github.com/KwatMDPhD") %></li>
