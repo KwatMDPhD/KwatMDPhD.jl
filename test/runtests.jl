@@ -30,4 +30,12 @@ routes()
 
 # ---- #
 
-GenieStatic.make(joinpath(PA, "public"), "http://localhost:8000")
+const BA = "http://localhost:8000"
+
+# ---- #
+
+String(GenieStatic.get(BA).body)
+
+# ---- #
+
+GenieStatic.make(joinpath(PA, "public"), BA)
