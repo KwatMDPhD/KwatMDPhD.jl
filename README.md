@@ -1,10 +1,24 @@
-# 🔥
-
-```bash
-julia --project --eval "using GenieFramework; Genie.loadapp(); up(; async = false)"
-```
+# My website 📍
 
 Built with [GenieStatic.jl](https://github.com/GenieFramework/GenieStatic.jl) 🖨️
+
+## Develop
+
+```julia
+using GenieFramework
+
+Genie.loadapp()
+
+up(; async = false)
+```
+
+http://localhost:8000
+
+## Deploy
+
+```bash
+npm run deploy
+```
 
 ---
 
