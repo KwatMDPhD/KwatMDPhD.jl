@@ -317,9 +317,9 @@ version = "1.0.62"
 
 [[deps.JuliaInterpreter]]
 deps = ["CodeTracking", "InteractiveUtils", "Random", "UUIDs"]
-git-tree-sha1 = "10da5154188682e5c0726823c2b5125957ec3778"
+git-tree-sha1 = "a729439c18f7112cbbd9fcdc1771ecc7f071df6a"
 uuid = "aa1ae85d-cabe-5617-a682-6adf51b2e16a"
-version = "0.9.38"
+version = "0.9.39"
 
 [[deps.LaTeXStrings]]
 git-tree-sha1 = "dda21b8cbd6a6c40d9d02a73230f9d70fed6918c"
@@ -639,9 +639,9 @@ version = "0.28.22"
 
 [[deps.StipplePivotTable]]
 deps = ["Stipple", "StippleUI", "Tables"]
-git-tree-sha1 = "02c29d8464f1c26f659d1aa94d69a986ecaafea4"
+git-tree-sha1 = "77bb654bf22c50872878ccf4653949d95808a055"
 uuid = "adab0226-ee3c-44de-8f2f-393b1bf1e936"
-version = "0.3.1"
+version = "0.3.2"
 
 [[deps.StipplePlotly]]
 deps = ["DataFrames", "Genie", "Requires", "Stipple"]
