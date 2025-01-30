@@ -22,6 +22,6 @@ Genie.up()
 
 const BA = "http://localhost:8000"
 
-run(`open $BA --background`)
+run(`open --background $BA`)
 
 GenieStatic.make(joinpath(PA, "public"), BA)
