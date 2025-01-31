@@ -194,9 +194,9 @@ version = "0.5.1"
 
 [[deps.Genie]]
 deps = ["ArgParse", "Base64", "Dates", "Distributed", "DotEnv", "EzXML", "FilePathsBase", "HTTP", "HttpCommon", "Inflector", "JSON3", "JuliaFormatter", "Logging", "LoggingExtras", "LoweredCodeUtils", "MIMEs", "Markdown", "Millboard", "Nettle", "OrderedCollections", "Pkg", "REPL", "Random", "Reexport", "Revise", "SHA", "Serialization", "Sockets", "UUIDs", "Unicode", "XML2_jll", "YAML"]
-git-tree-sha1 = "6b1283b541f467ae6830d6066535bd6f73a3e808"
+git-tree-sha1 = "f7940ef505b56012f58a57275aea849ab24d207c"
 uuid = "c43c736e-a2d1-11e8-161f-af95117fbd1e"
-version = "5.31.1"
+version = "5.32.0"
 
 [[deps.GenieAutoReload]]
 deps = ["Distributed", "Genie", "Logging", "Revise"]
@@ -206,9 +206,9 @@ version = "2.2.5"
 
 [[deps.GenieDevTools]]
 deps = ["Dates", "Genie", "RemoteREPL", "Revise", "Stipple", "StippleUI", "Tables"]
-git-tree-sha1 = "21ca67d9d8a9f5676c85be3cf16337b7dcdac2db"
+git-tree-sha1 = "5c84de04cde55e272e760e7ef021bb645f53bd67"
 uuid = "4e5d9629-6565-4102-a9ff-45c707eb060e"
-version = "2.12.0"
+version = "2.12.1"
 
 [[deps.GenieFramework]]
 deps = ["GarishPrint", "Genie", "GenieAutoReload", "GenieDevTools", "GeniePackageManager", "Reexport", "Revise", "Stipple", "StipplePivotTable", "StipplePlotly", "StippleTable", "StippleTabs", "StippleUI"]
@@ -383,9 +383,9 @@ uuid = "6f1432cf-f94c-5a45-995e-cdbf5db27b0b"
 version = "3.1.0"
 
 [[deps.MIMEs]]
-git-tree-sha1 = "65f28ad4b594aebe22157d6fac869786a255b7eb"
+git-tree-sha1 = "1833212fd6f580c20d4291da9c1b4e8a655b128e"
 uuid = "6c6e2e6c-3030-632d-7369-2d6c69616d65"
-version = "0.1.4"
+version = "1.0.0"
 
 [[deps.MacroTools]]
 git-tree-sha1 = "72aebe0b5051e5143a079a4685a46da330a40472"
@@ -465,10 +465,10 @@ uuid = "4536629a-c528-5b80-bd46-f80d51c5b363"
 version = "0.3.27+1"
 
 [[deps.OpenSSH_jll]]
-deps = ["Artifacts", "JLLWrappers", "Libdl", "OpenSSL_jll", "Pkg", "Zlib_jll"]
-git-tree-sha1 = "1b2f042897343a9dfdcc9366e4ecbd3d00780c49"
+deps = ["Artifacts", "JLLWrappers", "Libdl", "OpenSSL_jll", "Zlib_jll"]
+git-tree-sha1 = "cbb7bdfca123d91205ba9341bbaabe700934078d"
 uuid = "9bd350c2-7e96-507f-8002-3f2e150b4e1b"
-version = "8.9.0+1"
+version = "9.9.1+1"
 
 [[deps.OpenSSL]]
 deps = ["BitFlags", "Dates", "MozillaCACerts_jll", "OpenSSL_jll", "Sockets"]
@@ -478,9 +478,9 @@ version = "1.4.3"
 
 [[deps.OpenSSL_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
-git-tree-sha1 = "ad31332567b189f508a3ea8957a2640b1147ab00"
+git-tree-sha1 = "7493f61f55a6cce7325f197443aa80d32554ba10"
 uuid = "458c3c95-2e84-50aa-8efc-19380b2a3a95"
-version = "1.1.23+1"
+version = "3.0.15+3"
 
 [[deps.OrderedCollections]]
 git-tree-sha1 = "cc4054e898b852042d7b503313f7ad03de99c3dd"
@@ -553,10 +553,10 @@ uuid = "189a3867-3050-52da-a836-e630ba90ab69"
 version = "1.2.2"
 
 [[deps.RemoteREPL]]
-deps = ["Logging", "OpenSSH_jll", "REPL", "ReplMaker", "Serialization", "Sockets"]
-git-tree-sha1 = "42618f51c9c813f0c665dc4fe56dc2d5d90baab9"
+deps = ["Logging", "OpenSSH_jll", "REPL", "ReplMaker", "Serialization", "Sockets", "UUIDs"]
+git-tree-sha1 = "1d75634838e7a07872c3339aed8b86bfce9afafc"
 uuid = "1bd9f7bb-701c-4338-bec7-ac987af7c555"
-version = "0.2.17"
+version = "0.3.0"
 
 [[deps.ReplMaker]]
 deps = ["REPL", "Unicode"]
@@ -639,9 +639,9 @@ version = "0.28.22"
 
 [[deps.StipplePivotTable]]
 deps = ["Stipple", "StippleUI", "Tables"]
-git-tree-sha1 = "105ac528938e3e10f5db7ca21371749663f7368f"
+git-tree-sha1 = "c2b3b5818cf12222a4575bf14c20d0c929deba99"
 uuid = "adab0226-ee3c-44de-8f2f-393b1bf1e936"
-version = "0.4.0"
+version = "0.4.1"
 
 [[deps.StipplePlotly]]
 deps = ["DataFrames", "Genie", "Requires", "Stipple"]
@@ -657,15 +657,15 @@ version = "0.13.16"
 
 [[deps.StippleTable]]
 deps = ["Stipple", "StippleUI"]
-git-tree-sha1 = "c3a06836672a19fafdb8c600acc077746a4200b2"
+git-tree-sha1 = "6ba47cefe731cd4a5c3faf348cc439209ca5cd41"
 uuid = "5bb4b094-0818-496d-ae94-fd777e10e8ba"
-version = "1.0.1"
+version = "1.0.2"
 
 [[deps.StippleTabs]]
 deps = ["Stipple", "StippleUI"]
-git-tree-sha1 = "f8721b7491bfd239c69eace4c4acb0e74962c28f"
+git-tree-sha1 = "ef023615590c1f61c0b5ffd3582a8da54843e57d"
 uuid = "29f11006-3202-4091-a17b-0a26282d76dd"
-version = "1.0.0"
+version = "1.0.2"
 
 [[deps.StippleUI]]
 deps = ["Colors", "Dates", "Genie", "OrderedCollections", "PrecompileTools", "Stipple", "Tables"]
@@ -768,9 +768,9 @@ version = "1.11.0"
 
 [[deps.XML2_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Libiconv_jll", "Zlib_jll"]
-git-tree-sha1 = "04a51d15436a572301b5abbb9d099713327e9fc4"
+git-tree-sha1 = "a2fccc6559132927d4c5dc183e3e01048c6dcbd6"
 uuid = "02c8fc9c-b97f-50b9-bbe4-9be30ff0a78a"
-version = "2.10.4+0"
+version = "2.13.5+0"
 
 [[deps.YAML]]
 deps = ["Base64", "Dates", "Printf", "StringEncodings"]
