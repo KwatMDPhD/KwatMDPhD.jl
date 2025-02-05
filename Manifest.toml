@@ -157,9 +157,9 @@ version = "1.2.0"
 
 [[deps.FilePathsBase]]
 deps = ["Compat", "Dates"]
-git-tree-sha1 = "7878ff7172a8e6beedd1dea14bd27c3c6340d361"
+git-tree-sha1 = "2ec417fc319faa2d768621085cc1feebbdee686b"
 uuid = "48062228-2e41-5def-b9a4-89aafe57970f"
-version = "0.9.22"
+version = "0.9.23"
 weakdeps = ["Mmap", "Test"]
 
     [deps.FilePathsBase.extensions]
@@ -194,9 +194,9 @@ version = "0.5.1"
 
 [[deps.Genie]]
 deps = ["ArgParse", "Base64", "Dates", "Distributed", "DotEnv", "EzXML", "FilePathsBase", "HTTP", "HttpCommon", "Inflector", "JSON3", "JuliaFormatter", "Logging", "LoggingExtras", "LoweredCodeUtils", "MIMEs", "Markdown", "Millboard", "Nettle", "OrderedCollections", "Pkg", "REPL", "Random", "Reexport", "Revise", "SHA", "Serialization", "Sockets", "UUIDs", "Unicode", "XML2_jll", "YAML"]
-git-tree-sha1 = "f7940ef505b56012f58a57275aea849ab24d207c"
+git-tree-sha1 = "5b6b6335a88dd28d73f5af4c0494ee4c60f5ea47"
 uuid = "c43c736e-a2d1-11e8-161f-af95117fbd1e"
-version = "5.32.0"
+version = "5.33.0"
 
 [[deps.GenieAutoReload]]
 deps = ["Distributed", "Genie", "Logging", "Revise"]
