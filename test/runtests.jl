@@ -24,4 +24,4 @@ const UR = "http://localhost:8000"
 
 run(`open --background $UR`)
 
-GenieStatic.make(joinpath(DI, "public"), UR)
+GenieStatic.writ(joinpath(DI, "public"), UR)
