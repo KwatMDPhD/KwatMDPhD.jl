@@ -6,8 +6,6 @@ using KwatMDPhD
 
 using GenieFramework
 
-@genietools
-
 using GenieStatic
 
 # ---- #
@@ -16,12 +14,10 @@ const DI = pkgdir(KwatMDPhD)
 
 cd(DI)
 
+# ---- #
+
 Genie.loadapp()
 
-Genie.up()
+up()
 
-const UR = "http://localhost:8000"
-
-run(`open --background $UR`)
-
-GenieStatic.writ(joinpath(DI, "public"), UR)
+GenieStatic.writ("public", "http://localhost:8000")
