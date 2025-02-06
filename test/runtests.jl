@@ -12,16 +12,16 @@ using GenieStatic
 
 # ---- #
 
-const PA = pkgdir(KwatMDPhD)
+const DI = pkgdir(KwatMDPhD)
 
-cd(PA)
+cd(DI)
 
 Genie.loadapp()
 
 Genie.up()
 
-const BA = "http://localhost:8000"
+const UR = "http://localhost:8000"
 
-run(`open --background $BA`)
+run(`open --background $UR`)
 
-GenieStatic.make(joinpath(PA, "public"), BA)
+GenieStatic.make(joinpath(DI, "public"), UR)
