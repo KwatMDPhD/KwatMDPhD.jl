@@ -10,11 +10,7 @@ using GenieStatic
 
 # ---- #
 
-const DI = pkgdir(KwatMDPhD)
-
-cd(DI)
-
-# ---- #
+cd(pkgdir(KwatMDPhD))
 
 Genie.loadapp()
 
