@@ -466,9 +466,9 @@ version = "0.3.27+1"
 
 [[deps.OpenSSH_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "OpenSSL_jll", "Zlib_jll"]
-git-tree-sha1 = "cbb7bdfca123d91205ba9341bbaabe700934078d"
+git-tree-sha1 = "cf28501224f22b2b4d237d3cc7215c7c0cb52f6a"
 uuid = "9bd350c2-7e96-507f-8002-3f2e150b4e1b"
-version = "9.9.1+1"
+version = "9.9.2+0"
 
 [[deps.OpenSSL]]
 deps = ["BitFlags", "Dates", "MozillaCACerts_jll", "OpenSSL_jll", "Sockets"]
