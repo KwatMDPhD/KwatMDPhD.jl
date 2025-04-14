@@ -627,9 +627,9 @@ version = "1.11.1"
 
 [[deps.Stipple]]
 deps = ["Dates", "FilePathsBase", "Genie", "GenieSession", "GenieSessionFileSession", "JSON3", "Logging", "MacroTools", "Mixers", "Observables", "OrderedCollections", "Parameters", "Pkg", "PrecompileTools", "Random", "Reexport", "Requires", "StructTypes", "Tables"]
-git-tree-sha1 = "1302c9e6bb4201587aeaaa0634cd0ae21f67e4cb"
+git-tree-sha1 = "1491e4698b2fe9668f16566d4dc4da709fb3689d"
 uuid = "4acbeb90-81a0-11ea-1966-bdaff8155998"
-version = "0.31.20"
+version = "0.31.21"
 
     [deps.Stipple.extensions]
     StippleDataFramesExt = "DataFrames"
@@ -675,9 +675,9 @@ version = "1.0.3"
 
 [[deps.StippleUI]]
 deps = ["Colors", "Dates", "Genie", "OrderedCollections", "PrecompileTools", "Stipple", "Tables"]
-git-tree-sha1 = "8ee29f5ed5cac3099f4ac38ee8e515fcf59ee86f"
+git-tree-sha1 = "2adf9e2d7db92d835a8cc4636055bf185b08d82b"
 uuid = "a3c5d34a-b254-4859-a8fa-b86abb7e84a3"
-version = "0.24.6"
+version = "0.24.7"
 weakdeps = ["DataFrames"]
 
     [deps.StippleUI.extensions]
@@ -774,9 +774,9 @@ version = "1.11.0"
 
 [[deps.XML2_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Libiconv_jll", "Zlib_jll"]
-git-tree-sha1 = "9380cd28f093c901600ab70e0201fb18bae226de"
+git-tree-sha1 = "b8b243e47228b4a3877f1dd6aee0c5d56db7fcf4"
 uuid = "02c8fc9c-b97f-50b9-bbe4-9be30ff0a78a"
-version = "2.14.1+0"
+version = "2.13.6+1"
 
 [[deps.YAML]]
 deps = ["Base64", "Dates", "Printf", "StringEncodings"]
