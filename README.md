@@ -2,8 +2,6 @@
 
 Built with [GenieStatic.jl](https://github.com/GenieFramework/GenieStatic.jl) 🖨️
 
-## Develop
-
 ```julia
 using GenieFramework.Genie: loadapp, up
 
@@ -13,12 +11,6 @@ up(; async = false)
 ```
 
 http://localhost:8000
-
-## Deploy
-
-```bash
-npm run deploy
-```
 
 ---
 
