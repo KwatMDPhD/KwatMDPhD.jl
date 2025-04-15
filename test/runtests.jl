@@ -4,16 +4,16 @@ using KwatMDPhD
 
 # ----------------------------------------------------------------------------------------------- #
 
-using GenieFramework
+using GenieFramework.Genie: loadapp, up
 
-using GenieStatic
+using GenieStatic: writ
 
 # ---- #
 
 cd(pkgdir(KwatMDPhD))
 
-Genie.loadapp()
+loadapp()
 
 up()
 
-GenieStatic.writ("public", "http://localhost:8000")
+writ("public", "http://localhost:8000")

@@ -5,9 +5,9 @@ Built with [GenieStatic.jl](https://github.com/GenieFramework/GenieStatic.jl) ðŸ
 ## Develop
 
 ```julia
-using GenieFramework
+using GenieFramework.Genie: loadapp, up
 
-Genie.loadapp()
+loadapp()
 
 up(; async = false)
 ```
