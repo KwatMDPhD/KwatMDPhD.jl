@@ -392,9 +392,9 @@ uuid = "6c6e2e6c-3030-632d-7369-2d6c69616d65"
 version = "1.1.0"
 
 [[deps.MacroTools]]
-git-tree-sha1 = "72aebe0b5051e5143a079a4685a46da330a40472"
+git-tree-sha1 = "1e0228a030642014fe5cfe68c2c0a818f9e3f522"
 uuid = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
-version = "0.5.15"
+version = "0.5.16"
 
 [[deps.Markdown]]
 deps = ["Base64"]
@@ -675,9 +675,9 @@ version = "1.0.3"
 
 [[deps.StippleUI]]
 deps = ["Colors", "Dates", "Genie", "OrderedCollections", "PrecompileTools", "Stipple", "Tables"]
-git-tree-sha1 = "2adf9e2d7db92d835a8cc4636055bf185b08d82b"
+git-tree-sha1 = "32d76b77777e148031e29ff6b480517497c8f6b8"
 uuid = "a3c5d34a-b254-4859-a8fa-b86abb7e84a3"
-version = "0.24.7"
+version = "0.24.8"
 weakdeps = ["DataFrames"]
 
     [deps.StippleUI.extensions]
