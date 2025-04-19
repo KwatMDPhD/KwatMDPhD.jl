@@ -8,8 +8,6 @@ using GenieFramework.Genie: loadapp, up
 
 using GenieStatic: writ
 
-# ---- #
-
 cd(pkgdir(KwatMDPhD))
 
 loadapp()
