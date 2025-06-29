@@ -627,9 +627,9 @@ version = "1.11.1"
 
 [[deps.Stipple]]
 deps = ["Dates", "FilePathsBase", "Genie", "GenieSession", "GenieSessionFileSession", "JSON3", "Logging", "MacroTools", "Mixers", "Observables", "OrderedCollections", "Parameters", "Pkg", "PrecompileTools", "Random", "Reexport", "Requires", "StructTypes", "Tables"]
-git-tree-sha1 = "cdc3c28a70f3d206e409fb25bd8a1b41f62c51a9"
+git-tree-sha1 = "fa6c556e6075c45da57a5aeae27fe3d172b6e409"
 uuid = "4acbeb90-81a0-11ea-1966-bdaff8155998"
-version = "0.31.23"
+version = "0.31.24"
 
     [deps.Stipple.extensions]
     StippleDataFramesExt = "DataFrames"
@@ -675,9 +675,9 @@ version = "1.1.0"
 
 [[deps.StippleUI]]
 deps = ["Colors", "Dates", "Genie", "OrderedCollections", "PrecompileTools", "Stipple", "Tables"]
-git-tree-sha1 = "32d76b77777e148031e29ff6b480517497c8f6b8"
+git-tree-sha1 = "064568a8ce62c6de2235a79ab783803884a1ef19"
 uuid = "a3c5d34a-b254-4859-a8fa-b86abb7e84a3"
-version = "0.24.8"
+version = "0.24.9"
 weakdeps = ["DataFrames"]
 
     [deps.StippleUI.extensions]
