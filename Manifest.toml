@@ -648,9 +648,9 @@ version = "0.31.27"
 
 [[deps.StipplePivotTable]]
 deps = ["Stipple", "StippleUI", "Tables"]
-git-tree-sha1 = "375bcda3d1b9430e9879ae63c471d9241ba65328"
+git-tree-sha1 = "98d96b177125630eb5d273b3e705aec22bb4ec86"
 uuid = "adab0226-ee3c-44de-8f2f-393b1bf1e936"
-version = "0.4.2"
+version = "0.4.3"
 
 [[deps.StipplePlotly]]
 deps = ["DataFrames", "Genie", "Requires", "Stipple"]
