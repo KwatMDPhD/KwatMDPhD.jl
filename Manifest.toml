@@ -203,9 +203,9 @@ version = "0.5.1"
 
 [[deps.Genie]]
 deps = ["ArgParse", "Base64", "Dates", "Distributed", "DotEnv", "EzXML", "FilePathsBase", "HTTP", "HttpCommon", "Inflector", "JSON3", "JuliaFormatter", "Logging", "LoggingExtras", "LoweredCodeUtils", "MIMEs", "Markdown", "Millboard", "Nettle", "OrderedCollections", "Pkg", "REPL", "Random", "Reexport", "Revise", "SHA", "Serialization", "Sockets", "UUIDs", "Unicode", "XML2_jll", "YAML"]
-git-tree-sha1 = "57e3461d5b19b0a06d52135a53bd31382d423e2d"
+git-tree-sha1 = "8416fe254cc94e7ec96a0c9ddf188968fb6de649"
 uuid = "c43c736e-a2d1-11e8-161f-af95117fbd1e"
-version = "5.33.8"
+version = "5.33.9"
 
 [[deps.GenieAutoReload]]
 deps = ["Distributed", "Genie", "Logging", "Revise"]
@@ -632,9 +632,9 @@ version = "1.11.1"
 
 [[deps.Stipple]]
 deps = ["Dates", "FilePathsBase", "Genie", "GenieSession", "GenieSessionFileSession", "JSON3", "Logging", "MacroTools", "Mixers", "Observables", "OrderedCollections", "Parameters", "Pkg", "PrecompileTools", "Random", "Reexport", "Requires", "StructTypes", "Tables"]
-git-tree-sha1 = "ae8bcac77dafb083180c25df99a0f4b80772d1f6"
+git-tree-sha1 = "531e587004bc41d141a9218b4a5ee112638bc5bd"
 uuid = "4acbeb90-81a0-11ea-1966-bdaff8155998"
-version = "0.31.32"
+version = "0.31.33"
 
     [deps.Stipple.extensions]
     StippleDataFramesExt = "DataFrames"
