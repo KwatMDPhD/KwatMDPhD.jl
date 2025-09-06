@@ -632,9 +632,9 @@ version = "1.11.1"
 
 [[deps.Stipple]]
 deps = ["Dates", "FilePathsBase", "Genie", "GenieSession", "GenieSessionFileSession", "JSON3", "Logging", "MacroTools", "Mixers", "Observables", "OrderedCollections", "Parameters", "Pkg", "PrecompileTools", "Random", "Reexport", "Requires", "StructTypes", "Tables"]
-git-tree-sha1 = "531e587004bc41d141a9218b4a5ee112638bc5bd"
+git-tree-sha1 = "c4127f646335351fc1984bc4ef48711d11e40a33"
 uuid = "4acbeb90-81a0-11ea-1966-bdaff8155998"
-version = "0.31.33"
+version = "0.31.34"
 
     [deps.Stipple.extensions]
     StippleDataFramesExt = "DataFrames"
