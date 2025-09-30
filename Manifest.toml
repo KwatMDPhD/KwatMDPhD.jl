@@ -203,9 +203,9 @@ version = "0.5.1"
 
 [[deps.Genie]]
 deps = ["ArgParse", "Base64", "Dates", "Distributed", "DotEnv", "EzXML", "FilePathsBase", "HTTP", "HttpCommon", "Inflector", "JSON3", "JuliaFormatter", "Logging", "LoggingExtras", "LoweredCodeUtils", "MIMEs", "Markdown", "Millboard", "Nettle", "OrderedCollections", "Pkg", "REPL", "Random", "Reexport", "Revise", "SHA", "Serialization", "Sockets", "UUIDs", "Unicode", "XML2_jll", "YAML"]
-git-tree-sha1 = "df21c321b745588abce097aad99d3095d1c79e80"
+git-tree-sha1 = "f37621b33760f7219d8500c1df0f90ea7a097665"
 uuid = "c43c736e-a2d1-11e8-161f-af95117fbd1e"
-version = "5.33.13"
+version = "5.33.14"
 
 [[deps.GenieAutoReload]]
 deps = ["Distributed", "Genie", "Logging", "Revise"]
