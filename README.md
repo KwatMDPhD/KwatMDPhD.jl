@@ -14,4 +14,4 @@ http://localhost:8000
 
 ---
 
-Made by [Kata](https://github.com/KwatMDPhD/Kata.jl) 🥋
+Made by [Kata](https://github.com/KwatMDPhD/Kata.jl) ✅
