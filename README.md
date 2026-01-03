@@ -1,5 +1,3 @@
-# 📍
-
 Built with [GenieStatic.jl](https://github.com/GenieFramework/GenieStatic.jl) 🖨️
 
 ```julia
