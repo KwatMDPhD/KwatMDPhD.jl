@@ -8,7 +8,7 @@ using GenieStatic: write2
 
 ########################################
 
-cd(pkgdir(KwatMDPhD))
+cd("..")
 
 loadapp()
 

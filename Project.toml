@@ -8,4 +8,4 @@ GenieFramework = "a59fdf5c-6bf0-4f5d-949c-a137c9e2f353"
 GenieStatic = "f2e4b510-c1ab-4458-b5e8-4b1b3e33e260"
 
 [sources]
-GenieStatic = {url = "https://github.com/GenieFramework/GenieStatic.jl"}
+GenieStatic = { url = "https://github.com/GenieFramework/GenieStatic.jl" }
