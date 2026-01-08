@@ -2,10 +2,10 @@ using GenieFramework
 
 @genietools
 
-function link(st, ur)
+function text(st, pa)
 
     """
-    <a target="_blank" href="$ur" class="font-medium text-rose-400 hover:underline">$st</a>"""
+    <a target="_blank" href="$pa" class="font-medium text-rose-400 hover:underline">$st</a>"""
 
 end
 
