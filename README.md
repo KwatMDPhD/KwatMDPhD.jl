@@ -12,6 +12,12 @@ up(; async = false)
 
 http://localhost:8000
 
+## Publish
+
+```zsh
+npm run publish
+```
+
 ---
 
 Made by [Kata](https://github.com/KwatMDPhD/Kata.jl) ✅

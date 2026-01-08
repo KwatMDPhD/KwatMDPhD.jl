@@ -15,3 +15,5 @@ loadapp()
 up()
 
 write2("public", "http://localhost:8000")
+
+run(`npm run publish`)
