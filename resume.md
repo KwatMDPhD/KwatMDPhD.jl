@@ -6,7 +6,7 @@ https://web.stanford.edu/people/kwat
 
 ## Summary
 
-Seventh-year MD-PhD candidate at Stanford School of Medicine, specializing in bioinformatics.
+I'm a bioinformatician and a seventh-year MD-PhD candidate in the Mark Davis Laboratory at Stanford School of Medicine
 
 ## Education
 
