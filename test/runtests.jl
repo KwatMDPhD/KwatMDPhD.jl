@@ -6,7 +6,7 @@ using GenieFramework.Genie: loadapp, up
 
 using GenieStatic: write2
 
-cd("..")
+cd(pkgdir(KwatMDPhD))
 
 loadapp()
 
